@@ -1,0 +1,516 @@
+/* * * ПОВТОРЯЮЩИЕСЯ СТИЛИ * * */
+*{
+	transition: .4s ease-in-out;
+}
+
+h2{
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+	color: #000;
+	text-align: center;
+}
+
+h3,
+h4{
+	font-family: 'Open Sans', sans-serif;
+	color: #000;
+	font-weight: bold;
+	text-align: left;
+}
+
+h3 span{
+	color: #ff8b38;
+}
+
+.h2-baner{
+	color: #fff;
+}
+
+.p-text-baner{
+	font-family: 'Raleway', sans-serif;
+	font-weight: lighter;
+	color: #fff;
+	text-align: left;
+}
+
+.p-common-text{
+	font-family: 'Open Sans', sans-serif;
+	color: #86878b;
+}
+
+hr{
+	width: 50px;
+	margin-left: 0;
+}
+
+.common-hr, 
+.common-hr-2{
+	width: 50px;
+	background: #ff8b38;
+	height: 2px;
+}
+
+.common-hr-2{
+	margin: auto;
+	margin-bottom: 15px;
+}
+
+.btn-baner{
+	background-color: transparent;
+	border: 1px solid #fff;
+	padding: 10px 40px;
+	margin: 20px 0;
+	color: #fff;
+}
+
+.btn-baner:hover{
+	background: #ff8b38;
+	border: 1px solid #ff8b38;
+}
+
+.btn-common{
+	background-color: #ff8b38;
+	padding: 10px 40px;
+	margin: 20px 0;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.25), 0 1px 2px rgba(0,0,0,0.22);
+}
+.btn-common:hover{
+	background-color: #000;
+}
+
+.padding{
+	padding: 90px 0;
+}
+
+.gray{
+	background: #f5f5f5;
+}
+
+.shadow{
+	margin-top: 30px;
+	box-shadow: 0 12px 14px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+/* * * ШАПКА НАВИГАЦИЯ БАНЕР * * */
+header{
+	background: url(../img/baner-main.jpg) no-repeat;
+	min-height: 650px;
+}
+
+nav{
+	background: #000;
+	border-radius: 0px;
+	padding: 5px 0;
+}
+
+nav .logo{
+	margin-top: 12px;
+}
+
+nav ul li{
+	padding-right: 10px;
+}
+
+.nav>li>a{
+	border-bottom: 1px solid #000;
+}
+
+.nav>li>a:focus, 
+.nav>li>a:hover {
+    background-color: transparent;
+    color: #fff;
+    border-bottom: 1px solid #ff8b38;
+}
+
+nav a{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	color: #fff;
+}
+
+nav span{
+	background: #fff;
+}
+
+.baner-text-main{
+	margin-top: 7%;
+}
+
+.baner-text-main h2{
+	text-align: left;
+}
+
+.baner-text-main p{
+	margin-right: 50px;
+	line-height: 22px;
+}
+
+.form-1{
+	background-color: #f5f5f5;
+	border-radius: 5px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.form-1 h3{
+	padding-bottom: 15px;
+	text-align: center;
+}
+
+.form-1 input,
+.form-1 textarea{
+	width: 100%;
+	padding: 20px 0;
+	border: none;
+	border-bottom: 1px solid #f5f5f5;
+	padding-left: 40px;
+}
+
+.form-1 textarea{
+	padding-bottom: 22px;
+}
+
+.form-1 button{
+	width: 100%;
+	background: #ff9b51;
+	border: transparent;
+	padding: 23px 0;
+	color: #fff;
+	border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.form-1 button:hover{
+	background: #000;
+}
+
+/* * * СОЦИАЛЬНЫЕ СЕТИ * * */
+.social-media{
+	padding-bottom: 5px;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.52);
+}
+
+.social-media h3{
+	color: #333333;
+}
+
+.social-media i{
+	color: #cccccc;
+	font-size: 40px;
+	margin-top: 35px;
+	padding: 0  0 0 35px;
+}
+
+.social-media i:hover{
+	color: #ff8b38;
+}
+
+/* * * ХАРАКТЕРИСТИКИ TABS * * */
+.tabs{
+	margin-top: 3px;
+}
+
+.table-tabs{
+	background: #333333;
+	text-align: center;
+	text-transform: uppercase;
+	border-radius: 3px;
+	padding: 0px;
+}
+
+.table-tabs a{
+	color: #fff;
+	display: block;
+    padding: 45px 0;
+    border-bottom: 1px solid #c7c7c7;
+}
+
+.table-tabs a:hover,
+.table-tabs a:focus{
+	background: #ff8b38;
+	text-decoration: none; 
+}
+
+.table-tabs a:last-child{
+	border-bottom: none;
+}
+
+.tabs img{
+	max-width: 310px;
+	height: auto;
+}
+
+/* * * О КОМПАНИИ * * */
+.sub-list i{
+	position: relative;
+	top: 50px;
+	font-size: 25px;
+	color: #ff8b38;
+}
+
+.list{
+	margin-left: 45px;
+}
+
+.why-awesom span{
+	margin: 30px 0 15px 0;
+}
+
+.why-awesom span i{
+	color: #ff8b38;
+}
+
+.fa-lg {
+    font-size: 2.3em;
+}
+
+.why-awesom-row{
+	padding: 0px 20px; 
+}
+
+/* * * ЦЕНЫ УСЛУГИ * * */
+.pricing .p-common-text{
+	padding-bottom: 10px;
+}
+
+.lower{
+	margin-top: 45px;
+}
+
+.pricing-row-top{
+	background: #333333;
+	color: #fff;
+}
+
+.pricing-row-top h3{
+	color: #fff;
+	padding: 20px 0;
+	border-bottom: 1px solid #f5f5f5;
+}
+
+.pricing-row-top .price{
+	font-size: 70px;
+	font-weight: bold;
+	padding: 5px 0;
+	font-family: 'Raleway', sans-serif;
+}
+
+.pricing-row-top .price i{
+	font-size: 30px;
+}
+
+.pricing-row-top .italic{
+	font-style: italic;
+	color: #f5f5f5;
+	padding-bottom: 5px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.divider{
+	height: 5px;
+	background: #ff8b38;
+	margin-top: -10px;
+}
+
+.divider-2{
+	background: #ff8b38;
+	padding: 15px 0 5px 0;
+	margin-top: -10px;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.pricing-row-bottom{
+	background: #fff;
+	color: #86878b;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.pricing-row-bottom .features{
+	display: block;
+	padding: 10px 0;
+	text-transform: uppercase;
+	border-bottom: 1px solid #f5f5f5;
+}
+
+.pricing-row-bottom .features:last-child{
+	border-bottom: none;
+}
+
+/* * * ОТЗЫВЫ * * */
+.comments .p-common-text{
+	margin-bottom: 45px;
+}
+
+.comments-row{
+	padding: 0 50px;
+}
+
+.comment{
+	background: #f5f5f5;
+	border-radius: 5px;
+	position: relative;
+	margin-bottom: 40px;
+}
+
+.triangle{
+	content: '';
+	display: block;
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-top: 15px solid #f5f5f5;
+	left: 10%;
+	top: 100%;
+  }
+
+.comment p{
+	padding: 10px;
+}
+
+.avatar img{
+	margin-left: 10px;
+}
+
+.avatar-text{
+	margin-left: 25px;
+}
+
+/* * * МАЛЕНЬКИЙ БАНЕР * * */
+.baner-min{
+	background: url(../img/baner-min.jpg) no-repeat;
+	height: 320px;
+	text-align: center;
+}
+
+.baner-min h2{
+	margin-top: 90px;
+}
+
+.baner-min hr{
+	margin: 15px auto;
+}
+
+.baner-min p{
+	text-align: center;
+}
+
+.contact-us p{
+	margin-bottom: 40px;
+}
+
+.contact-us button{
+	margin: 45px auto 0px auto;
+}
+
+/* * * ПОДВАЛ * * */
+footer{
+	background: #000;
+	padding-top: 15px; 
+}
+
+footer i{
+	color: #cccccc;
+	padding: 5px;
+}
+
+footer i:hover{
+	color: #ff8b38;
+}
+
+/* * * КНОПКА НАВЕРХ * * */
+#toTop{
+	width: 50px;
+	height: 50px;
+	border: 2px solid #ff8b38;
+	text-align: center;
+	padding: 13px;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	display: none;
+}
+
+#toTop i{
+	color: #ff8b38;
+	font-weight: bold;
+}
+
+#toTop:hover{
+	background: #000;
+	border: 2px solid #000;
+}	
+
+/* * * МЕДИЙНЫЕ ЗАПРОСЫ * * */
+@media (min-width: 1200px){
+	.smm {
+		text-align: right;
+	}
+}
+
+@media (min-width: 769px) and (max-width: 1025px){
+	.social-media h3,
+	.social-media p{
+	text-align: center;
+	}
+
+	.social-media i{
+	font-size: 30px;
+	margin-top: 40px;
+	padding: 5px 20px;
+	}
+}
+
+@media (max-width: 768px){
+	ul li a{
+	text-align: center;
+	}
+
+	.social-media h3,
+	.social-media p{
+	text-align: center;
+	}
+
+	.social-media i{
+	margin: 10px auto;
+	padding: 0 10px;
+	}
+
+	.shadow{
+	margin: 5px auto;
+	display: block;
+	}
+
+	.lower{
+	margin-top: 0px;
+	}
+
+	#toTop{
+	width: 25px;
+	height: 25px;
+	padding: 0px;
+	}
+}
+
+@media (min-width: 319px) and (max-width: 550px){
+	.social-media i{
+	font-size: 20px;
+	margin-top: 40px;
+	padding: 0 6px;
+	}
+
+	.shadow{
+	max-width: 240px;
+	height: auto;
+	}
+
+	.baner-min h2{
+	margin-top: 50px;
+	}
+}

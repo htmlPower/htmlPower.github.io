@@ -1,0 +1,415 @@
+*{
+	transition: .5s ease-in-out; 
+}
+
+html{ 
+	font-size: 100%; 
+}
+
+.container{
+	max-width: 1140px;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	padding: 40px 0;
+}
+
+p{
+	color: #777777;
+	font-family: 'Roboto', sans-serif;
+	font-size: 0.9rem;
+}
+
+h5{
+	font-size: 1rem;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	margin-bottom: -10px;
+}
+
+h4{
+	font-size: 1.1rem;
+	font-family: 'Droid Serif', serif;
+	font-style: italic;
+	color: #777777;
+	font-weight: normal;
+	margin-top: -20px;
+	margin-bottom: 70px;
+}
+
+h3{
+	font-size: 1.9rem;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+h2{
+	font-family: 'Droid Serif', serif;
+	font-size: 2rem;
+	font-weight: 500;
+}
+
+h1{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2.5rem;
+	text-transform: uppercase;
+	font-weight: 550;
+}
+
+button{
+	background-color: #fed136;
+	border-radius: 4px;
+	color: #fff;
+	border: 0;
+	padding: 15px 35px;
+	text-transform: uppercase;
+	font-size: 1rem;
+	font-family: 'Montserrat', sans-serif;
+}
+
+button:hover{
+	box-shadow: 0 0 5em .5em rgba(0,0,0,0.9);
+}
+
+.col-3{
+	width: 29.5%;
+	height: auto;
+	float: left;
+	text-align: center;
+	padding: 0 20px;
+	padding-bottom: 80px;
+}
+
+header{
+	height: 100%;
+    background-image: url(../img/baner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 700px;
+    color: #fff;
+ }
+
+
+.logo{
+	background-image: url(../img/logo.png);
+	background-repeat: no-repeat;
+	width: 80px;
+	height: 40px;
+	float: left;
+}
+
+nav ul{
+	float: right;
+}
+
+nav ul li{
+	display: inline-block;
+	padding-left: 35px;
+}
+
+nav ul li a{
+	color: #fff;
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+nav ul li a:hover{
+	color: #fed136;
+	box-shadow: 0 0 5em .5em rgba(0,0,0,0.4);
+}
+
+header .flex{
+	text-align: center;
+	float: left;
+	width: 100%;
+	height: 60%;
+	margin: 15% 0 0 0;
+}
+
+.bg{
+	background: #f7f7f7;
+	height: 1150px;
+	margin-top: 220px;
+}
+
+.bot-text{
+	background-color: #fff;
+	padding-top: 1px;
+	padding-bottom: 8px;
+    margin: -4px;
+    margin-left: 25px;
+    width: 290px;
+}
+
+.card{
+    transform: translate(0%, 0%);
+    width: 290px;
+    height: 300px;
+    background: #fed136;
+    overflow: hidden;
+    margin-left: 25px;
+}
+
+.card .imgBx,
+.card .details{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    box-sizing: border-box;
+}
+
+.card .details{
+	background: #fed136;
+    top: 0;
+    left: 100%;
+    padding: 80px 30px;
+}
+
+.card:hover .details{
+    top: 0;
+    left: 0%;
+}
+
+.card .details h5{
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0 0 10px;
+    border-bottom: 2px solid #fff;
+}
+
+.card .details p{
+    margin: 20px 0 0;
+    color: #fff;
+}
+
+.brands img{
+	width: 170px;
+	height: auto;
+	padding: 50px 15px;
+	filter: grayscale(100%);
+}
+
+.brands img:hover{
+	filter: none;
+}
+
+.bg_2{
+	background: #f7f7f7;
+	height: 640px;
+}
+
+.col-3 i{
+	color: #000;
+}
+
+.fa-facebook:hover{
+	color: #3b5998;
+}
+
+.fa-google:hover{
+	color: #d95232;
+}
+
+.fa-twitter:hover{
+	color: #00aced;
+}
+
+.fa-pinterest-p:hover{
+	color: #cb2028;
+}
+
+.contact{
+	background: url(../img/bg.jpg) no-repeat;
+	height: 85%;
+	min-height: 500px;
+    background-position: center;
+    background-size: cover;
+}
+
+.contact h3{
+	color: #fff;
+}
+
+input{
+	float: left;
+	margin: 15px;
+	width: 50%;
+}
+
+textarea{
+	height: 175px;
+}
+
+input, 
+textarea{
+	border-radius: 4px;
+	padding: 10px;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+input:first-child{
+	margin-top: 0px;
+}
+
+.contact button{
+	margin-top: 30px;
+}
+
+footer p{
+	text-align: center;
+}
+
+/****** Для адаптива ******/
+@media (min-width: 1600px){
+	header .flex{
+	margin: 30% 0 0 0;
+	}
+
+	.contact{
+	height: 55%;
+    background-position: center;
+    background-size: cover;
+	}
+}
+
+@media (max-width: 1050px){
+	button{
+	padding: 25px 65px;
+	font-size: 1.1rem;
+	margin-top: 40px; 
+	}
+
+	header .flex{
+	margin: 27% 0 0 0;
+	}
+
+	.logo, nav{
+	margin: 0 20px;
+	}
+ 
+	.contact{
+	height: 100%;
+	}
+
+	.col-3{
+	width: 92%;
+	height: auto;
+	padding: 15px 4%;
+	}
+
+	.bg{
+	height: 2670px;
+	margin-top: 560px;
+	}
+
+	.card {
+    width: 60%;
+    height: 10.5%;
+    margin: 0 20%;
+	}
+
+	.bot-text {
+    margin-left: 20%;
+    width: 60%;
+	}
+
+	.bg_2 {
+    height: 1450px;
+	}
+
+	.contact{
+	height: 800px;
+	}
+
+	input, textarea{
+	float: left;
+	margin: 10px 10%;
+	width: 80%;
+	}
+
+}
+
+@media (max-width: 480px){
+	.bg{
+	margin-top: 610px;
+	}
+
+	.card .details {
+    padding: 30px 30px;
+	}
+}
+
+/****** Мобильное меню ******/
+.nav-toggle {
+	display: none;
+	position: relative;
+	float: right;
+	width: 40px;
+	height: 40px;
+	border-radius: 5px;
+	margin-left: 20px;
+	background: #fed136;
+}
+
+.nav-toggle span {
+	display: block;
+	position: absolute;
+	top: 19px;
+	left: 8px;
+	right: 8px;
+	height: 2px;
+	background: #fff;
+}
+
+.nav-toggle span:before, .nav-toggle span:after {
+	content: "";
+	position: absolute;
+	display: block;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: #fff;
+}
+.nav-toggle span:before {
+	top: -10px;
+}
+.nav-toggle span:after {
+	bottom: -10px;
+}
+
+#menu.active {
+	max-height: 350px;
+}
+
+@media (max-width: 768px) {
+	.nav-toggle {
+	display: block;
+	}
+
+	#menu {
+	max-height: 0;
+	background: #2b2a2f;
+	float: none;
+	position: absolute;
+	overflow: hidden;
+	top: 90px;
+	right: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	z-index: 3;
+	}
+
+	#menu li {
+	display: block;
+	padding: 15px 0;
+	border-bottom: 1px solid #fff;
+	margin-right: 0;
+	}
+}

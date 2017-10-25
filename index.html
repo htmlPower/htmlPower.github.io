@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang ="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Портфолио html верстальщика</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- - КНОПКА ПОДНЯТЬСЯ НАВЕРХ - -->	
+	<script type="text/javascript">
+	$(function() { 
+	$(window).scroll(function() {
+	if($(this).scrollTop() != 0) {
+	$('#toTop').fadeIn();
+	} else {
+	$('#toTop').fadeOut();
+	}
+	});
+	$('#toTop').click(function() {
+	$('body,html').animate({scrollTop:0},600);
+	});
+	});
+	</script>
+
+</head>
+
+<body>
+<!-- - ШАПКА НАВИГАЦИЯ БАНЕР - -->
+	<header id="main">
+		<nav class="navbar">
+			<div class="container">
+				<div class="navbar-header col-xs-2 col-sm-7 pull-right">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-main" aria-expanded="false">
+					   <span class="icon-bar"></span>
+					   <span class="icon-bar"></span>
+					   <span class="icon-bar"></span>
+				</button>
+				</div>
+				<div class="col-xs-10 col-sm-5 col-md-4 col-lg-3 logo">
+					<a href="#main"><i class="fa fa-superpowers" aria-hidden="true"></i> Power<span>_</span>of<span>_</span>HTML</a>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-8 col-lg-9 pull-right collapse navbar-collapse navigation" id="navbar-main">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#main">Главная</a></li>
+						<li><a href="#works">Портфолио</a></li>
+						<li><a href="#cv">Обо мне</a></li>
+						<li><a href="#contact">Контакты</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center baner">
+				<h1>Junior <span>html</span>-верстальщик</h1>
+				<h3>cкачать резюме</h3>
+				<button><i class="fa fa-download" aria-hidden="true"></i></button>
+			</div>
+		</div>
+	</header>
+
+<!-- - ПОРТФОЛИО - -->
+	<section class="padding portfolio" id="works">
+		<div class="container">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center name">
+				<h2>Портфолио</h2>
+				<hr>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 portfolio-row work-grid">
+				<a href="other/axit/index.html" target="blank"><img src="img/Axit.jpg">
+					<div class="text-pop-up text-middle">
+						<h5>AxIt</h5>
+						<p>Верстка адаптивного макета landing-page при помощи сетки Bootstrap 3.3.7.</p>
+						<p class="interesting"><span>Что интересного?</span><br> Использован Prefixfree для минимизации кода и актуальности верстки во всех браузерах.</p>	
+					</div>
+				</a>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 portfolio-row work-grid">
+				<a href="other/card-page/index.html" target="blank"><img src="img/card-page.jpg">
+					<div class="text-pop-up text-middle-2">
+						<h5>Страница товара</h5>
+						<p>Адаптивная карточка товара на сетке Bootstrap 3.3.7.</p>				
+						<p class="interesting"><span>Что интересного?</span><br> Блок с валютой имеет картинку - реализовано при помощи JS.</p>
+					</div>
+				</a>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 portfolio-row work-grid">
+				<a href="other/golden/index.html" target="blank"><img src="img/golden.jpg">
+					<div class="text-pop-up text-middle-2">
+						<h5>Golden page</h5>
+						<p>Адаптивнй landing-page.</p>
+						<p class="interesting"><span>Что интересного?</span> <br> Блок Портфолио с выдвигающейся картинкой - реализовано на CSS.<br> Адаптивное мобильное меню на JS.</p>					
+					</div>
+				</a>
+			</div>
+		</div>
+	</section>
+
+<!-- - РЕЗЮМЕ - -->	
+	<section class="padding resume" id="cv">
+		<div class="container">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center name">
+				<h2>Резюме</h2>
+				<h3>мои знания и образование</h3>
+				<hr>
+			</div>
+			<div class=" col-xs-12 col-sm-12 col-md-6 col-lg-6 cv-left">
+				<h3 class="text-center"><i class="fa fa-user- hidden-xs" aria-hidden="true"></i> Персональная информация:</h3>
+				<p><span>ФИО:</span>Семененко Алёна Андреевна</p>
+				<p><span>Территориально нахожусь:</span> г.Симферополь, Крым(к переезду готова).</p>
+				<p><span>Дата рождения:</span> 16 февраля 1994 г.</p>
+				<p><span>Образование:</span> оконченное высшее по специальности "Экономика инновационной деятельности"(закончила КФУ им. В.И. Вернадского ИЭиУ).</p>
+				<p><span>Дополнительное образование:</span> школа иностранных языков NewTone, блоги, форумы, статьи, книги.</p>
+			</div>
+			<div class=" col-xs-12 col-sm-12 col-md-6 col-lg-6 cv-right">
+				<h3 class="text-center"><i class="fa fa-id-card-o hidden-xs" aria-hidden="true"></i> Профессиональные навыки:</h3>
+				<p><span>Знания в области WEB:</span> HTML5, CSS3, адаптивная верстка под мобильные устройства, фреймворк Bootstrap. </p>
+				<p><span>Программы:</span> Adobe Photoshop, Notepad++, Sublime Text.</p>
+				<p><span>Для верстки использую:</span> prefixfree, normalize, animate и т.д.</p>
+				<p><span>Знание языков:</span> русский, украинский, английский(upper-intermidiet).</p>
+			</div>
+		</div>
+	</section>
+	
+<!-- - КОНТАКТЫ - -->
+	<section class="padding find-me" id="contact">
+		<div class="container">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center name">
+				<h2>Связаться со мной</h2>
+				<hr>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center smm">
+				<a href="https://vk.com/id243195276" target="blank"><i class="fa fa-vk" aria-hidden="true"></i><br><br>vk.com/id243195276</a>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center smm">
+				<a href="skype:i.am.extraterrestrial?chat"><i class="fa fa-skype" aria-hidden="true"></i><br><br>i.am.extraterrestrial</a>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center smm">
+				<a href="mailto:kzyjxrf@yandex.ru"><i class="fa fa-envelope-o" aria-hidden="true"></i><br><br>kzyjxrf@yandex.ru</a>
+			</div>
+		</div>
+	</section>
+
+<!-- - ПОДВАЛ - -->	
+	<footer>
+		<div class="container">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+				<p>2017 г.</p>
+			</div>
+		</div>
+	</footer>
+
+<!-- - КНОПКА НАВЕРХ - -->	
+	<div id="toTop">
+		<i class="fa fa-arrow-up" aria-hidden="true"></i>
+	</div>
+
+<!-- - ФАЙЛЫ js - -->	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.5/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

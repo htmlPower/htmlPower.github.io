@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang ="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>AxIT</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- - КНОПКА ПОДНЯТЬСЯ НАВЕРХ - -->	
+	<script type="text/javascript">
+	$(function() { 
+	$(window).scroll(function() {
+	if($(this).scrollTop() != 0) {
+	$('#toTop').fadeIn();
+	} else {
+	$('#toTop').fadeOut();
+	}
+	});
+	$('#toTop').click(function() {
+	$('body,html').animate({scrollTop:0},800);
+	});
+	});
+	</script>
+
+</head>
+
+<body>
+<!-- - ШАПКА НАВИГАЦИЯ БАНЕР - -->
+	<header>
+		<nav class="navbar">
+			<div class="container">
+				<div class="navbar-header col-xs-4 col-sm-9 pull-right">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-main" aria-expanded="false">
+					   <span class="icon-bar"></span>
+					   <span class="icon-bar"></span>
+					   <span class="icon-bar"></span>
+				</button>
+				</div>
+				<div class="col-xs-8 col-sm-3 col-md-2 col-lg-2 logo">
+					<a href="#"><img src="img/logo-min.png"></a>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 pull-right collapse navbar-collapse navigation" id="navbar-main" style="   padding-right: 0px;">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#features">Features</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#pricing">Pricing</a></li>
+						<li><a href="#reviews">Reviews</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container baner-text-main">
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+				<img src="img/logo-max.png">
+				<h2 class="h2-baner">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h2>
+				<hr>
+				<p class="p-text-baner">Lorem ipsum dolor sit amet, consectetur dipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
+				<button class="btn-baner">Download</button>
+			</div>
+			<div class="hidden-xs hidden-sm col-md-4 col-lg-4 col-md-offset-2 col-lg-offset-2 form-1">
+				<h3>Try Your <span>FREE</span> Trial Today</h3>
+				<form>
+					<input type="name" placeholder="Name">
+					<input type="email" placeholder="Email">
+					<input type="password" placeholder="Password">
+					<button>Get Started</button>
+				</form>
+			</div>
+		</div>
+	</header>
+
+<!-- - СОЦИАЛЬНЫЕ СЕТИ - -->	
+	<section class="social-media">
+		<div class="container">
+			<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+				<h3>Social Media</h3>
+				<p class="p-common-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>Aenean euismod bibendum laoreet.</p>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 text-center smm">
+				<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-stumbleupon" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-wifi" aria-hidden="true"></i></a>
+			</div>
+		</div>
+	</section>
+
+<!-- - ХАРАКТЕРИСТИКИ TABS - -->
+	<section class="tabs padding gray" id="features">
+		<div class="container">
+			<div class="col-xs-2 col-sm-2 col-md-1 col-lg-1 table-tabs nav-tabs">
+				<a href="#tab1" class="active" data-toggle="tab">Tab 1</a>
+				<a href="#tab2" data-toggle="tab">Tab 2</a>
+				<a href="#tab3" data-toggle="tab">Tab 3</a>
+			</div>
+			<div class="col-xs-9 col-sm-9 col-md-5 col-lg-5 col-xs-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1 tab-content">
+				<div id="tab1" class="tab-pane fade in active">
+				<h3>Tabs with soft transitioning effect.</h3>
+				<hr class="common-hr">
+				<p class="p-common-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+				<button class="btn-common">Download</button>
+				</div>
+				<div id="tab2"  class="tab-pane fade">
+				<h3>Some different content</h3>
+				<hr class="common-hr">
+				<p class="p-common-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+				<button class="btn-common">I want this one</button>
+				</div>
+				<div id="tab3"  class="tab-pane fade">
+				<h3>Lorem ipsum dolor sit amet</h3>
+				<hr class="common-hr">
+				<p class="p-common-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+				<button class="btn-common">Get it NOW!</button>
+				</div>
+			</div>
+			<div class="hidden-xs hidden-sm col-md-4 col-lg-4 col-md-offset-1 col-lg-offset-1">
+				<img src="img/tower.png">
+			<div>
+		</div>
+	</section>
+
+<!-- - О КОПМАНИИ - -->
+	<section class="sub-list padding" id="about">
+		<div class="container">
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+				<img src="img/pic-1.png" class="shadow">
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+				<h3>Sub list section</h3>
+				<hr class="common-hr">
+				<p class="p-common-text">Lorem ipsum dolor sit amet, onsectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
+				<i class="fa fa-cloud-download" aria-hidden="true"></i>
+					<div class="list">
+						<h4>Title</h4>
+						<p class="p-common-text">Lorem ipsum dolor sit amet, onsectetur adipiscing elit. Aenean euismod bibendum laoreet. </p>
+					</div>
+				<i class="fa fa-handshake-o" aria-hidden="true"></i>
+					<div class="list">
+						<h4>Title</h4>
+						<p class="p-common-text">Lorem ipsum dolor sit amet, onsectetur adipiscing elit. Aenean euismod bibendum laoreet. </p>
+					</div>
+			</div>
+		</div>
+	</section>
+	<section class="gray padding">
+		<div class="container">
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+				<h3>Standard Picture Section</h3>
+				<hr class="common-hr">
+				<p class="p-common-text">Lorem ipsum dolor sit amet, onsectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+				<img src="img/pic-2.png" class="shadow center-block">
+			</div>
+		</div>
+	</section>
+	<section class="why-awesom padding">
+		<div class="container">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<h2>WHY THIS IS AWESOME</h2>
+				<hr class="common-hr-2">
+				<p class="p-common-text text-center">Lorem ipsum dolor sit amet, onsectetur </p>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center why-awesom-row">
+				<span class="fa-stack fa-lg">
+  					<i class="fa fa-circle-thin fa-stack-2x"></i>
+  					<i class="fa fa-level-up fa-stack-1x"></i>
+				</span>
+				<h4 class="text-center">Thoughtful Design</h4>
+				<p class="p-common-text text-center">Lorem ipsum dolor sit amet, onsectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center why-awesom-row">
+				<span class="fa-stack fa-lg">
+  					<i class="fa fa-circle-thin fa-stack-2x"></i>
+  					<i class="fa fa-refresh fa-stack-1x"></i>
+				</span>
+				<h4 class="text-center">Well Crafted</h4>
+				<p class="p-common-text text-center">Lorem ipsum dolor sit amet, onsectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet.</p>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center why-awesom-row">
+				<span class="fa-stack fa-lg">
+  					<i class="fa fa-circle-thin fa-stack-2x"></i>
+  					<i class="fa fa-lightbulb-o fa-stack-1x"></i>
+				</span>
+				<h4 class="text-center">Easy to Customize</h4>
+				<p class="p-common-text text-center">Lorem ipsum dolor sit amet, onsectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
+			</div>
+		</div>
+	</section>
+
+<!-- - ЦЕНЫ УСЛУГИ - -->	
+	<section class="pricing gray padding" id="pricing">
+		<div class="container">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<h2>PRICING OPTIONS</h2>
+				<hr class="common-hr-2">
+				<p class="p-common-text text-center">Lorem ipsum dolor sit amet, onsectetur </p>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center lower">
+				<div class="pricing-row-top">
+					<h3 class="text-center">Basic</h3>
+					<p class="price"><i class="fa fa-usd" aria-hidden="true"></i>0</p>
+					<p class="italic">Free for life</p>
+				</div>
+				<div class="divider"></div>
+				<div class="pricing-row-bottom">
+					<p class="features">1 gb of space</p>
+					<p class="features">10 gb of bandwidth</p>
+					<p class="features">3 websites</p>
+					<p class="features">Basic Customization</p>
+					<p class="features">wordpress integration</p>
+					<p class="features">email support</p>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center">
+				<div class="pricing-row-top">
+					<h3 class="text-center">Professional</h3>
+					<p class="price"><i class="fa fa-usd" aria-hidden="true"></i>19</p>
+					<p class="italic">Monthly Payment</p>
+				</div>
+				<div class="divider-2">
+					<p>Our most popular</p>
+				</div>
+				<div class="pricing-row-bottom">
+					<p class="features">5 gb of space</p>
+					<p class="features">50 gb of bandwidth</p>
+					<p class="features">12 websites</p>
+					<p class="features">Advanced Customization</p>
+					<p class="features">wordpress integration</p>
+					<p class="features">email support</p>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center lower">
+				<div class="pricing-row-top">
+					<h3 class="text-center">Enterprise</h3>
+					<p class="price"><i class="fa fa-usd" aria-hidden="true"></i>79</p>
+					<p class="italic">Monthly Payment</p>
+				</div>
+				<div class="divider"></div>
+				<div class="pricing-row-bottom">
+					<p class="features">unlimited space</p>
+					<p class="features">unlimited bandwidth</p>
+					<p class="features">100 websites</p>
+					<p class="features">Advanced Customization</p>
+					<p class="features">wordpress integration</p>
+					<p class="features">email support</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<!-- - ОТЗЫВЫ - -->	
+	<section class="padding comments" id="reviews">
+		<div class="container">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<h2>WHAT OUR CUSTOMERS ARE SAYING</h2>
+				<hr class="common-hr-2">
+				<p class="p-common-text text-center">Lorem ipsum dolor sit amet, onsectetur </p>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center comments-row">
+				<div class="comment">
+					<p class="p-common-text text-center">Lorem ipsum dolor sit amet, onsectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet.</p>
+					<div class="triangle"></div>
+				</div>
+				<div class="avatar">
+					<img src="img/avatar.png" class="pull-left">
+					<div class="avatar-text pull-left">
+						<h4>Jeremy H.</h4>
+						<p class="p-common-text text-left">Manager</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center comments-row">
+				<div class="comment">
+					<p class="p-common-text text-center">Lorem ipsum dolor sit amet, onsectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet.</p>
+					<div class="triangle"></div>
+				</div>
+				<div class="avatar">
+					<img src="img/avatar.png" class="pull-left">
+					<div class="avatar-text pull-left">
+						<h4>John S.</h4>
+						<p class="p-common-text text-left">Freelancer</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center comments-row">
+				<div class="comment">
+					<p class="p-common-text text-center">Lorem ipsum dolor sit amet, onsectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet.</p>
+					<div class="triangle"></div>
+				</div>
+				<div class="avatar">
+					<img src="img/avatar.png" class="pull-left">
+					<div class="avatar-text pull-left">
+						<h4>Susan W.</h4>
+						<p class="p-common-text text-left">Photographer</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<!-- - МАЛЕНЬКИЙ БАНЕР - -->	
+	<section class="baner-min">
+		<div class="container">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<h2 class="h2-baner">STYLISH AXURE DESIGN</h2>
+				<hr>
+				<p class="p-text-baner">Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!</p>
+				<button class="btn-baner">Download</button>
+			</div>	
+		</div>
+	</section>
+
+<!-- - КОНТАКТЫ: ФОРМА ОБРАТНОЙ СВЯЗИ - -->	
+	<section class="padding contact-us" id="contact">
+		<div class="container">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<h2>CONTACT US</h2>
+				<hr class="common-hr-2">
+				<p class="p-common-text text-center">Lorem ipsum dolor sit amet, onsectetur </p>
+			</div>
+			<form class="form-1">
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+					<input type="name" placeholder="Name">
+					<input type="email" placeholder="Email">
+					<input type="text" placeholder="Subject">
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+					<textarea name="comment" cols="70" rows="7" placeholder="Massege"></textarea>
+				</div>
+			</form>
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<button class="btn-common center-block">Download</button>
+			</div>
+		</div>
+	</section>
+
+<!-- - ПОДВАЛ - -->	
+	<footer>
+		<div class="container">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+				<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-stumbleupon" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-wifi" aria-hidden="true"></i></a>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+				<p class="p-common-text">© 2017 AxIT</p>
+			</div>
+		</div>
+	</footer>
+
+<!-- - КНОПКА НАВЕРХ - -->	
+	<div id="toTop">
+		<i class="fa fa-angle-double-up" aria-hidden="true"></i>
+	</div>
+
+<!-- - ФАЙЛЫ js - -->	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.5/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

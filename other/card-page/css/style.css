@@ -1,0 +1,307 @@
+*{
+	font-family: 'Lato', sans-serif;
+}
+
+@media (max-width: 767px){ 
+	.cart{
+	margin-top: 30px;
+	}
+
+	.nav li{
+		text-align: center;
+	}	
+}
+
+@media (min-width: 768px){ 
+	header{
+	max-height: 30px;
+	border-right: 20px;
+	}
+}
+
+/* * * * * * HEADER, TOP BANER * * * * * * * */
+section.top-section{
+	background: #eee;
+	color: #555555;
+	text-transform: uppercase;
+	padding-top: 5px;
+}
+
+/* * * * * * HEADER, CURRENCY. LOGO. CART  * * * * * * * */
+header{
+	margin: 30px 0;
+}
+
+header select{
+	width: 80px;
+	border: transparent;
+}
+
+header option{
+	padding-left: 20px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.usd{
+	background: url(../img/usd.jpg) no-repeat;
+	background-size: 20px;
+	padding-left: 35px;
+	background-position: 6px;
+}
+
+.eur{
+	background: url(../img/eur.jpg) no-repeat;
+	background-size: 20px;
+	padding-left: 35px;
+	background-position: 6px;
+}
+
+select.usd,
+select.eur{
+	padding-top: 2px;
+	padding-bottom: 3px;
+	padding-left: 30px;
+	background-position: 6px;
+}
+
+.cart a,
+.cart a:visited,
+.cart a:focus{
+	border: 2px solid #eee;
+	padding: 10px 30px;
+	text-transform: uppercase;
+	color: #000;
+	font-weight: bold;
+}
+
+.cart a:hover{
+	color: #fff;
+	background: #000;
+	border: 2px solid #000;
+	text-decoration: none;
+	transition: all 0.2s;
+}
+
+/* * * * * * NAVIGATION  * * * * * * * */
+.main-menu{
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	padding: 10px 0;
+}
+
+.navbar-toggle span{
+	background: #000;
+}
+
+.navbar-toggle {
+  border: none;
+  background: transparent !important;
+}
+.navbar-toggle:hover {
+  background: transparent !important;
+}
+.navbar-toggle .icon-bar {
+  width: 22px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.navbar-toggle .icon-bar:nth-of-type(1) {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transform-origin: 10% 10%;
+  -ms-transform-origin: 10% 10%;
+  transform-origin: 10% 10%;
+}
+.navbar-toggle .icon-bar:nth-of-type(2) {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.navbar-toggle .icon-bar:nth-of-type(3) {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transform-origin: 10% 90%;
+  -ms-transform-origin: 10% 90%;
+  transform-origin: 10% 90%;
+}
+.navbar-toggle.collapsed .icon-bar:nth-of-type(1) {
+  -webkit-transform: rotate(0);
+  -ms-transform: rotate(0);
+  transform: rotate(0);
+}
+.navbar-toggle.collapsed .icon-bar:nth-of-type(2) {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.navbar-toggle.collapsed .icon-bar:nth-of-type(3) {
+  -webkit-transform: rotate(0);
+  -ms-transform: rotate(0);
+  transform: rotate(0);
+}
+
+nav li a,
+nav li a:visited{
+	color: #000;
+	text-transform: uppercase;
+	font-weight: bold;
+	border-radius: 0px;
+	background: #fff;
+}
+
+nav li a:hover,
+nav li a:focus{
+	color: #000;
+	border-radius: 0px;
+}
+
+.favs i{
+	color: #000;
+	font-weight: bold;
+	margin-top: 13px;
+	margin-left: 35px;
+}
+
+.favs i:hover{
+	color: #961165;
+}
+
+input[type=search]{
+	background: url(../img/search-icon.png) no-repeat 9px center;
+	border: transparent;
+	width: 70px;
+	cursor: pointer;
+	transition: all .5s;
+	margin: 10px -60px 0;
+	float: right;
+}
+
+input[type=search]:focus{
+	width: 150px;
+	padding-left: 32px;
+}
+
+section{
+	padding-top: 20px;
+}
+
+/* * * * * * PHOTO  * * * * * * * */
+section img{
+	max-height: 700px;
+	max-width: auto;
+}
+
+/* * * * * * INFO  * * * * * * * */
+section .link-back{
+	padding-top: 10px;
+}
+
+section .link-back a{
+	color: #000;
+}
+
+section .name{
+	padding-top: 10px;
+}
+
+section .star{
+	padding-top: 10px;
+}
+
+section .star i{
+	color: #ded3aa;
+}
+
+section .star a{
+	color: #555555;
+	margin-left: 10px;
+}
+
+section .star a:last-child{
+	margin-left: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+	border-left: 1px solid #555555;
+	padding-left: 10px;
+	color: #000;
+}
+
+section .price h2{
+	color: #337ab7;
+	padding: 15px 0;
+	font-weight: bold;
+}
+
+section .description{
+	padding: 15px 0;
+	color: #555555;
+}
+
+section select{
+	padding: 7px 15px;
+}
+
+.form-control{
+	border-radius: 0;
+	padding-left: 9px;
+	box-shadow: none;
+}
+
+.input-group-addon{
+	border-radius: 0;
+	padding: 6px 4px;
+	background: #fff;
+}
+
+.input-group-addon i{
+	color: #000;
+}
+
+/* * * * * * BUTTONS  * * * * * * * */
+section .buttons .btn{
+	margin: 40px 0;
+	border-radius: 0;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+section .buttons .btn:first-child{
+	float: left;
+	color: #fff;
+	background: #000;
+	border: 2px solid #000;
+}
+
+section .buttons .btn:first-child:hover{
+	color: #000;
+	background: #fff;
+	border: 2px solid #eee;
+	transition: all 0.2s;
+}
+
+section .buttons .btn:last-child{
+	float: right;
+	background: #fff;
+	border: 2px solid #eee;
+	color: #000;
+}
+
+section .buttons .btn:last-child i{
+	color: #000;
+	padding-right: 5px;
+	font-weight: bold;
+}
+
+section .buttons .btn:last-child:hover{
+	background: #eee;
+	transition: all 0.2s;
+}
+
+/* * * * * * FOOTER  * * * * * * * */
+footer{
+	margin-top: 30px;
+	padding-top: 15px;
+	border-top: 1px solid #eee;
+	color: #555555;
+}
