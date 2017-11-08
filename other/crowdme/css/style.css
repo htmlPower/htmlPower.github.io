@@ -1,0 +1,572 @@
+/* * * ПОВТОРЯЮЩИЕСЯ СТИЛИ * * */
+*{
+	transition: .6s ease-in-out;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+}
+
+.padding{
+	margin: 80px 0 90px 0;
+}
+
+button{
+	color: #fff;
+	padding: 15px 40px;
+	border-radius: 10px;
+	background: #99c50a;
+	border: none;
+	margin-top: 30px;
+	font-size: 17px;
+}
+
+button:hover, .featured button:hover{
+	background: #bcda5c;
+	color: #fff;
+}
+
+p{
+	color: #606060;
+}
+
+h4{
+	font-size: 22px;
+}
+
+/* * * ШАПКА НАВИГАЦИЯ * * */
+.logo{
+	margin-top: 10px;
+}
+
+.logo a{
+	color: #6d6e70;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.logo img{
+	position: absolute;
+}
+
+.logo span{
+	font-size: 22px;
+	position: relative;
+    left: 45px;
+    top: 6px;
+}
+
+nav span{
+	background: #000;
+}
+
+header nav ul li{
+	margin-top: 5px;
+}
+
+header nav ul li a{
+	color: #666666;
+	font-size: 14px;
+	font-weight: bold;
+	border-bottom: 2px solid #fff;
+	border-radius: 10px;
+}
+
+.login{
+	margin-left: 30px;
+}
+
+header .nav>li>a:focus, header .nav>li>a:hover {
+    text-decoration: none;
+    background-color: transparent;
+    color: #8fc63d;
+    border-bottom: 2px solid #8fc63d;
+    border-radius: 10px;
+}
+
+/* * * БАНЕР * * */
+.baner{
+	margin-top: -15px;
+}
+
+.carousel-caption{
+	color: #fff;
+	padding-bottom: 140px;
+}
+
+h1{
+	font-weight: bold;
+}
+
+.item{
+    background: #333;    
+    text-align: center;
+    height: 600px !important;
+}
+
+/* * * НАША РАБОТА * * */
+.our-work h2{
+	margin: 35px 0 50px 0;
+	font-weight: bold;
+	color: #515151;
+}
+
+.our-work p{
+	margin: 0 7%;
+}
+
+/* * * НАША РАБОТА * * */
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover, .nav>li>a:focus, .nav>li>a:hover{
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-bottom: 2px solid #8fc63d;
+    border-radius: 0px;
+    color: #656565;
+    background: transparent;
+}
+
+.nav-tabs>li>a>h3>span:hover, .nav-tabs>li.active>a>h3>span:focus, .nav-tabs>li.active>a>h3>span{
+	background: #add136;
+}
+
+.nav-tabs>li>a{
+	color: #656565;
+	border: 0px;
+	margin-right: 100px;
+	padding-right: 30px;
+}
+
+.nav-tabs>li>a>h3>span{
+	color: #fff;
+	margin-right: 20px;
+	background: #5f5f5f;
+	padding: 13px 19px;
+	border-radius: 50px;
+}
+
+.tab-pane{
+	margin: 70px 0;
+}
+
+.tab-pane h4{
+	color: #add136;
+	margin-top: -10px;
+	margin-bottom: 25px;
+}
+
+/* * * ДВА ЦВЕТНЫХ БЛОКА * * */
+.find>.container-fluid{
+	padding-right: 0px;
+    padding-left: 0px;
+}
+
+.padding-inside{
+	padding: 50px 0;
+}
+
+.left-block{
+	background: #e2f8ff;
+}
+
+.right-block{
+	background: #f5f9eb;
+}
+
+.find img{
+	margin-top: 20px;
+}
+.find h4{
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.find button, .featured button{
+	padding: 10px 30px;
+	font-size: 14px;
+}
+
+.find button{
+	margin-top: 10px;
+}
+
+.left-block button{
+	background: #26a6d1;
+}
+
+.left-block button:hover{
+	background: #40b9e1;
+}
+
+/* * * ПРОЕКТЫ * * */
+.featured h3{
+ 	font-weight: bold;
+ 	margin-bottom: 15px;
+}
+
+.featured button{
+ 	margin-top: 45px;
+ 	background: transparent;
+ 	border: 1px solid #b6b6b6;
+ 	color: #b6b6b6;
+}
+
+.featured button:hover{
+	border: 1px solid #bcda5c;
+}
+
+/* * * ТОВАРЫ * * */
+.img-item img{
+	position: relative;
+}
+
+.triangle{
+	position: absolute;
+	top: 15px;
+    left: 20px;
+}
+
+.triangle p{
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 12px;
+	transform: rotate(-45deg);
+}
+
+.img-item button{
+	position: absolute;
+	top: 140px;
+	left: 165px;
+	color: #fff;
+	background: #26a6d1;
+	border: none;
+	padding: 5px 15px;
+}
+
+.img-item button:hover{
+	background: #40b9e1;
+	border: none;
+}
+
+.text-item, .rating{
+	background: #f9f9f9;
+	padding: 5px 20px;
+	width: 300px;
+	margin-left: 1px;
+	border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.text-item h5{
+	color: #484848;
+	font-weight: bold;
+	font-size: 18px;
+	padding-top: 10px;
+}
+
+.text-item p{
+	font-size: 13px;
+}
+
+.rating{
+	background: #e3e3e3;
+	width: 260px;
+	border-radius: 5px;
+	padding: 0px;
+	float: left;
+}
+
+.rating80 hr, .rating10 hr{
+	background: #add136;
+	height: 5px;
+	margin: 0px;
+	float: left;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.rating80 hr{
+	width: 80%;
+}
+
+.rating10 hr{
+	width: 10%;
+}
+
+/* * * ОТЗЫВЫ * * */
+.be-part{
+	background: #f9f9f9;
+	height: 100%;
+	padding-bottom: 60px;
+	margin-top: -60px;
+}
+
+.be-part h2{
+	color: #9ec02d;
+	font-weight: bold;
+	margin-top: 60px;
+	margin-bottom: 30px;
+}
+
+.be-part p{
+	margin: 0 70px;
+	line-height: 30px;
+}
+
+.comment{
+	background: #fff;
+	border-radius: 10px;
+	padding: 20px 0;
+	margin-top: 70px;
+	position: relative;
+}
+
+.triangle-sm{
+	position: absolute;
+	width: 0; 
+	height: 0;
+	bottom: -20px;
+    left: 50px;
+	border-left: 20px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 20px solid #fff;
+}
+
+.comment h4{
+	color: #9ec02d;
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+.comment p{
+	line-height: 22px;
+	font-size: 15px;
+}
+
+.person{
+	margin-top: 35px;
+	margin-left: 20px;
+}
+
+.person h5{
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+/* * * БРЕНДЫ * * */
+.brand img{
+	max-width: 200px;
+	height: auto;
+	padding: 0 20px;
+	filter: grayscale(100%);
+}
+
+.brand img:hover{
+	filter: none;
+}
+
+/* * * ПОДВАЛ * * */
+footer{
+	border-top: 1px solid #ededed;
+}
+
+footer p{
+	font-size: 13px;
+	margin-top: 15px;
+}
+
+/* * * КНОПКА ВВЕРХ * * */
+#toTop{
+	width: 50px;
+	height: 50px;
+	border: 2px solid #add136;
+	text-align: center;
+	padding: 13px;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	display: none;
+}
+
+#toTop i{
+	color: #26a6d1;
+	font-weight: bold;
+}
+
+#toTop:hover{
+	background: #add136;
+	border: 2px solid #add136;
+}
+
+/* * * МЕДИЙНЫЕ ЗАПРОСЫ * * */
+@media (min-width: 2000px){
+	.item{
+    height: 950px !important;
+	}
+}
+
+@media(max-width: 1200px){
+	.nav-tabs>li>a{
+	margin-right: 0px;
+	padding-right: 40px;
+	}
+}
+
+@media (max-width: 991px){
+	.featured-item{
+	margin: 10px 0;
+	}
+
+	.img-item img{
+	width: 100%;
+	}
+
+	.triangle p{
+	font-size: 1.3em;
+	margin-top: 10px;
+	}
+
+	.text-item, .rating {
+    width: 100%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+	.logo{
+	text-align: center;
+	width: 100%;
+	margin-bottom: 10px;
+	}
+
+	.login{
+	margin-left: 0px;
+	}
+
+	.item{
+    height: 450px !important;
+	}
+
+	.nav-tabs>li>a{
+	margin-right: 0px;
+	padding-right: 20px;
+	}
+
+	.img-item button{
+	top: 55%;
+	left: 75%;
+	}
+}
+
+@media (max-width: 767px){
+	.pull-right {
+    float: none!important;
+	}
+
+	.login{
+	margin-left: 0px;
+	}
+
+	.carousel-caption{
+	padding-bottom: 0px;
+	}
+
+	h1{
+	font-size: 13px;
+	}
+
+	button{
+	padding: 10px 25px;
+	margin-top: 15px;
+	font-size: 16px;
+	}
+
+	.be-part p {
+    margin: 0px;
+	}
+
+	.nav-tabs>li>a{
+	margin-right: 0px;
+	padding-right: 15px;
+	}
+
+	.nav-tabs>li>a>h3>span {
+    margin-right: 5px;
+    padding: 3px 9px;
+    border-radius: 50px;
+	}
+}
+
+@media (min-width: 570px) and (max-width: 767px){
+	.img-item button{
+	top: 50%;
+	left: 65%;
+	}
+
+	.nav-tabs>li>a>h3{
+	font-size: 16px;
+	}
+}
+
+@media (min-width: 460px) and (max-width: 569px){
+	.img-item button{
+	top: 40%;
+	left: 60%;
+	}
+
+	.nav-tabs>li>a>h3{
+	font-size: 13px;
+	}
+}
+
+@media (min-width: 360px) and (max-width: 767px){
+	.item{
+    height: 225px !important;
+	}
+}
+
+@media (min-width: 360px) and (max-width: 459px){
+	.img-item button{
+	top: 30%;
+	left: 50%;
+	}
+
+	.triangle p{
+	font-size: 12px;
+	margin-top: 0px;
+	}
+
+	.nav-tabs>li>a{
+	padding-right: 0px;
+	}
+
+	.nav-tabs>li>a>h3{
+	font-size: 10px;
+	}
+}
+
+@media (min-width: 290px) and (max-width: 359px){
+	.item{
+    height: 195px !important;
+	}
+
+	.img-item button{
+	top: 20%;
+	left: 38%;
+	}
+
+	.triangle p{
+	font-size: 10px;
+	margin-top: 0px;
+	}
+
+	.nav-tabs>li>a{
+	padding-right: 0px;
+	padding-left: 3px;
+	}
+
+	.nav-tabs>li>a>h3{
+	font-size: 10px;
+	}
+
+	.nav-tabs>li>a>h3>span {
+    margin-right: 2px;
+	}
+}
