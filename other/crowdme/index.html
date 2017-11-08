@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang ="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Crowdme</title>
+	<link rel="icon" href="img/fav.png" type="image/x-icon">
+	<script src="js/prefixfree.min.js"></script>
+	<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+
+<!-- - КНОПКА ПОДНЯТЬСЯ НАВЕРХ - -->	
+	<script type="text/javascript">
+	$(function() { 
+	$(window).scroll(function() {
+	if($(this).scrollTop() != 0) {
+	$('#toTop').fadeIn();
+	} else {
+	$('#toTop').fadeOut();
+	}
+	});
+	$('#toTop').click(function() {
+	$('body,html').animate({scrollTop:0},800);
+	});
+	});
+	</script>
+</head>
+
+<body>
+	<header id="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6 col-sm-5 col-md-2 col-lg-2 logo">
+     				 	<a href="#"><img src="img/logo.png" class="animated slideInLeft"><span>Crowdme</span></a>
+     				 	</div>
+				<nav class="navbar">
+				    <div class="navbar-header">
+      					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-main" aria-expanded="false">
+	       					<span class="icon-bar"></span>
+        					<span class="icon-bar"></span>
+        					<span class="icon-bar"></span>
+      					</button>
+    				</div>
+    				<div class="col-md-10 col-lg-10">
+	    				<div class="collapse navbar-collapse click" id="navbar-main">
+						    <ul class="nav navbar-nav pull-right">
+						        <li><a href="#header">HOME</a></li>
+						        <li><a href="#how--it-works">HOW IT WORKS</a></li>
+						        <li><a href="#discover">DISCOVER A PROJECT </a></li>
+						        <li><a href="#blog">BLOG</a></li>
+						        <li><a href="#find-out">FIND OUT MORE</a></li>
+						        <li class="login"><a href="#">LOGIN</a></li>
+					      	</ul>
+	      				</div>
+          			</div>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<section class="baner">
+		<div class="container-fluid">
+			<div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+	  			<div class="carousel-inner">
+	    			<div class="active item">
+	    				<img src="img/baner.jpg">
+	      				<div class="carousel-caption">
+				        	<h1>Intellectual Property has the Shelf Life</h1>
+				        	<h2>of a Banana.</h2>
+				        	<button>Become a Member</button>
+				    	</div>
+	    			</div>
+				    <div class="item">
+				    	<img src="img/baner2.jpg">
+				      	<div class="carousel-caption">
+				        	<h1>Intellectual Property has the Shelf Life</h1>
+							<h2>of a Banana.</h2>
+							<button>Become a Member</button>
+				      	</div>
+				    </div>
+				    <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+				    	<span class="glyphicon glyphicon-chevron-left"></span>
+				  	</a>
+				  	<a class="carousel-control right" href="#myCarousel" data-slide="next">
+				    	<span class="glyphicon glyphicon-chevron-right"></span>
+				  	</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="padding our-work" id="how-it-works">
+		<div class="container">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+				<img src="img/our-work.jpg" class="animated flipInX">
+				<h2>Our work is the presentation<br>of our capabilities.</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. <br><br>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+			</div>
+		</div>
+	</section>
+	<section class="padding tabs">
+		<div class="container">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<ul class="nav nav-tabs">
+					<li class="active"><a data-toggle="tab" href="#panel1"><h3><span>1</span>Simple</h3></a></li>
+					<li><a data-toggle="tab" href="#panel2"><h3><span>2</span>Transparent</h3></a></li>
+					<li><a data-toggle="tab" href="#panel3"><h3><span>3</span>Collaborative</h3></a></li>
+				</ul>
+				<div class="tab-content">
+					<div id="panel1" class="tab-pane fade in active">
+						<div class="hidden-xs col-sm-4 col-md-3 col-lg-3 text-center">
+							<img src="img/glasses.jpg">
+					  	</div>
+						<div class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
+							<h4>Browse projects, like booking a hotel online!</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et do lore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						</div>
+					</div>
+					<div id="panel2" class="tab-pane fade">
+					    <div class="hidden-xs col-sm-4 col-md-3 col-lg-3 text-center">
+							<img src="img/sofa.png">
+					  	</div>
+						<div class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
+							<h4>Browse projects, like booking a hotel online!</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et do lore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						</div>
+					</div>
+					<div id="panel3" class="tab-pane fade">
+					    <div class="hidden-xs col-sm-4 col-md-3 col-lg-3 text-center">
+							<img src="img/wallet.png">
+					  	</div>
+						<div class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
+							<h4>Browse projects, like booking a hotel online!</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et do lore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="padding find" id="find-out">
+		<div class="container-fluid">
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 left-block padding-inside animated bounceInLeft">
+				<div class="col-xs-5 col-sm-5 col-md-5 col-lg-3 col-lg-offset-2 text-center">
+					<img src="img/sofa.png">
+				</div>
+				<div class="col-xs-7 col-sm-7 col-md-7 col-lg-6">
+					<h4>Find Properties</h4>
+					<p>Sign up to browse the portfolio. Your journey to becoming a real estate baron starts here.</p>
+					<button>Become A Member</button>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 right-block padding-inside animated bounceInRight">
+				<div class="col-xs-5 col-sm-5 col-md-5 col-lg-3 col-lg-offset-1 text-center">
+					<img src="img/wallet.png">
+				</div>
+				<div class="col-xs-7 col-sm-7 col-md-7 col-lg-6">
+					<h4>Find Buyers</h4>
+					<p>Sign up to browse the portfolio. Your journey to becoming a real estate baron starts here.</p>
+					<button>Submit Your Project</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="padding featured" id="discover">
+		<div class="container">
+			<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+				<h3>Featured Projects</h3>
+				<p>Brief details of new and popular projects. To view full listings, you will be required to sign up and become a member.</p>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-md-offset-1 col-lg-offset-1">
+				<button>Become A Member</button>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row padding">
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 featured-item">
+					<div class="img-item">
+						<img src="img/pic1.png">
+						<div class="triangle">
+							<p>new</p>
+						</div>
+						<button>From GBP  3600</button>
+					</div>
+					<div class="text-item">
+						<h5>Ontario Tower , LONDON</h5>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<div class="rating10 rating">
+							<hr>
+						</div>
+						<br>
+						<p class="pull-left">10% Funded</p>
+						<p class="pull-right">8 Days Left</p>
+						<br>
+						<hr>
+						<a href="#">
+							<p class="pull-right">See Project Details</p>
+						</a>
+						<br>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 featured-item">
+					<div class="img-item">
+						<img src="img/pic2.jpg">
+						<div class="triangle">
+							<p>new</p>
+						</div>
+						<button>From GBP  3600</button>
+					</div>
+					<div class="text-item">
+						<h5>Ontario Tower , LONDON</h5>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<div class="rating80 rating">
+							<hr>
+						</div>
+						<br>
+						<p class="pull-left">80% Funded</p>
+						<p class="pull-right">4 Days Left</p>
+						<br>
+						<hr>
+						<a href="#">
+							<p class="pull-right">See Project Details</p>
+						</a>
+						<br>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 featured-item">
+					<div class="img-item">
+						<img src="img/pic1.png">
+						<div class="triangle">
+							<p>new</p>
+						</div>
+						<button>From GBP  3600</button>
+					</div>
+					<div class="text-item">
+						<h5>Ontario Tower , LONDON</h5>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<div class="rating10 rating">
+							<hr>
+						</div>
+						<br>
+						<p class="pull-left">10% Funded</p>
+						<p class="pull-right">8 Days Left</p>
+						<br>
+						<hr>
+						<a href="#">
+							<p class="pull-right">See Project Details</p>
+						</a>
+						<br>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="be-part" id="blog">
+		<div class="container">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+				<h2>Be Part of a Growing International Community</h2>
+				<p>One of the challenges in networking is everybody thinks it's making cold calls to strangers. Actually, it's the people who already have strong trust relationships with you</p>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-5 col-lg-offset-1">
+				<div class="comment text-center">
+					<h4>One of the Best </h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod taempor incididunt ut labore et dolore magna aliqua.</p>
+					<div class="triangle-sm"></div>
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 person">
+					<img src="img/ava.png">
+				</div>	
+				<div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 person">
+					<h5>Ivan Ivanov</h5>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-5">
+				<div class="comment text-center">
+					<h4>Exellent Service </h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod taempor incididunt ut labore et dolore magna aliqua.</p>
+					<div class="triangle-sm"></div>
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 person">
+					<img src="img/ava.png">
+				</div>	
+				<div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 person">
+					<h5>Ivan Ivanov</h5>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="padding brand animated fadeInDown">
+		<div class="container">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+				<a href="#"><img src="img/crowdfunding.png"></a>
+				<a href="#"><img src="img/presents.png"></a>
+				<a href="#"><img src="img/rthk.png"></a>
+				<a href="#"><img src="img/techinasia.png"></a>
+				<a href="#"><img src="img/yahoo.png"></a>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+				<p>Copyright © 2001 - 2017</p>
+			</div>
+		</div>
+	</footer>
+
+
+<!-- - КНОПКА НАВЕРХ - -->	
+	<div id="toTop">
+		<i class="fa fa-angle-double-up" aria-hidden="true"></i>
+	</div>
+
+<!-- - ФАЙЛЫ js - -->	
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
