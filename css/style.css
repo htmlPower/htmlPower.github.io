@@ -278,6 +278,16 @@ footer a:hover{
 	}
 }
 
+@media (min-width: 769px) and (max-width: 1050px){
+	.small-one .text-pop-up {
+	padding: 0px;
+	}
+
+	.small-one .text-pop-up p{
+	font-size: 13px;
+	}
+}
+
 @media (max-width: 768px){
 	.text-middle-2{
 	padding-top: 17%;
