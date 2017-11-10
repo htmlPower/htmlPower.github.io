@@ -9,8 +9,11 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.js"></script> 
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.4/waypoints.min.js"></script>
+    	<link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/animate.css/3.1.0/animate.css">
+   	<script src="js/script.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/animate.css">
 
 <!-- - КНОПКА ПОДНЯТЬСЯ НАВЕРХ - -->	
 	<script type="text/javascript">
@@ -93,7 +96,7 @@
 	<section class="padding our-work" id="how-it-works">
 		<div class="container">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-				<img src="img/our-work.jpg" class="animated flipInX">
+				<img src="img/our-work.jpg" class="os-animation" data-os-animation="flipInX" data-os-animation-delay="0s">
 				<h2>Our work is the presentation<br>of our capabilities.</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. <br><br>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
 			</div>
@@ -141,7 +144,7 @@
 	</section>
 	<section class="padding find" id="find-out">
 		<div class="container-fluid">
-			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 left-block padding-inside animated move-left bounceInLeft">
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 left-block padding-inside os-animation" data-os-animation="bounceInLeft" data-os-animation-delay="0s">
 				<div class="col-xs-5 col-sm-5 col-md-5 col-lg-3 col-lg-offset-2 text-center">
 					<img src="img/sofa.png">
 				</div>
@@ -151,7 +154,7 @@
 					<button>Become A Member</button>
 				</div>
 			</div>
-			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 right-block padding-inside animated move-right bounceInRight">
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 right-block padding-inside os-animation" data-os-animation="bounceInRight" data-os-animation-delay="0s">
 				<div class="col-xs-5 col-sm-5 col-md-5 col-lg-3 col-lg-offset-1 text-center">
 					<img src="img/wallet.png">
 				</div>
@@ -254,7 +257,7 @@
 		</div>
 	</section>
 	<section class="be-part" id="blog">
-		<div class="container">
+		<div class="container os-animation" data-os-animation="fadeIn" data-os-animation-delay="0s">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
 				<h2>Be Part of a Growing International Community</h2>
 				<p>One of the challenges in networking is everybody thinks it's making cold calls to strangers. Actually, it's the people who already have strong trust relationships with you</p>
@@ -337,7 +340,6 @@ $(window).scroll(function (){
 	</div>
 
 <!-- - ФАЙЛЫ js - -->	
-	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
