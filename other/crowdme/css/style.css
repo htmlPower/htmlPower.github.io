@@ -32,6 +32,13 @@ h4{
 	font-size: 22px;
 }
 
+.os-animation{
+        opacity: 0;
+}  
+
+.os-animation.animated{
+        opacity: 1;
+ } 
 /* * * ШАПКА НАВИГАЦИЯ * * */
 .logo{
 	margin-top: 10px;
