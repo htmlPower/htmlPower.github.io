@@ -12,7 +12,6 @@
 	<script src="js/jquery-1.11.0.js"></script>
 	<script src="js/waypoints.min.js"></script>
     	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
-   	<script src="js/script.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 <!-- - КНОПКА ПОДНЯТЬСЯ НАВЕРХ - -->	
@@ -30,6 +29,34 @@
 	});
 	});
 	</script>
+	
+	<script type="text/javascript">
+       $(function(){
+            function onScrollInit( items, trigger ) {
+                items.each( function() {
+                var osElement = $(this),
+                    osAnimationClass = osElement.attr('data-os-animation'),
+                    osAnimationDelay = osElement.attr('data-os-animation-delay');
+                  
+                    osElement.css({
+                        'animation-delay':          osAnimationDelay
+                    });
+
+                    var osTrigger = ( trigger ) ? trigger : osElement;
+                    
+                    osTrigger.waypoint(function() {
+                        osElement.addClass('animated').addClass(osAnimationClass);
+                        },{
+                            triggerOnce: true,
+                            offset: '70%'
+                    });
+                });
+            }
+
+            onScrollInit( $('.os-animation') );
+            onScrollInit( $('.staggered-animation'), $('.staggered-animation-container') );
+});
+</script>
 </head>
 
 <body>
