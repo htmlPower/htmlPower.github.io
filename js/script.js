@@ -1,12 +1,1 @@
-$(function() { 
-	$(window).scroll(function() {
-	if($(this).scrollTop() != 0) {
-	$('#toTop').fadeIn();
-	} else {
-	$('#toTop').fadeOut();
-	}
-	});
-	$('#toTop').click(function() {
-	$('body,html').animate({scrollTop:0},600);
-	});
-	});
+$(function(){$(window).scroll(function(){0!=$(this).scrollTop()?$("#toTop").fadeIn():$("#toTop").fadeOut()}),$("#toTop").click(function(){$("body,html").animate({scrollTop:0},600)})});
