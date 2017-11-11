@@ -1,380 +1,85 @@
-/* * * ОБЩИЕ СТИЛИ * * */
-*{
-	transition: .5s ease-in-out;
-	font-family: 'Exo 2', sans-serif;
-	font-size: 15px;
+*{transition:.5s ease-in-out;font-family:'Exo 2',sans-serif;font-size:15px}
+.padding{margin:45px 0}
+.name{margin-bottom:50px}
+h2{font-size:40px;color:#000}
+.name hr{background:#e57c1c;width:60px;height:2px;margin-top:30px;border:0}
+header{background:url(../img/baner-common.jpg) no-repeat;min-height:660px}
+nav{background:#000}
+nav a{color:#fff}
+nav a:hover{text-decoration:none}
+.logo{margin-top:8px}
+.logo i{color:#e57c1c;padding-right:5px}
+.logo a{font-weight:550;font-size:25px}
+.logo a span{color:#e57c1c}
+.logo a:hover{color:#fff}
+.logo i:hover{text-shadow:1px 1px rgba(255,255,255,.9);transform:rotateY(360deg)}
+.nav>li>a:focus,.nav>li>a:hover{background-color:transparent;color:#e57c1c}
+.icon-bar{background:#fff}
+.baner{color:#fff;margin-top:140px}
+.baner h1{font-size:65px}
+.baner h1 span{color:#e57c1c;font-size:65px}
+.baner button{background:transparent;padding:15px 50px;color:#e57c1c;margin-top:25px;border:1px solid rgba(229,124,28,0.25);box-shadow:0 14px 28px rgba(0,0,0,0.25),0 10px 10px rgba(0,0,0,0.22)}
+.baner button:hover{background:#000;border:1px solid #000}
+.portfolio{margin-bottom:60px}
+.portfolio img{width:100%;height:auto;filter:grayscale(100%)}
+.portfolio img:hover{filter:none}
+.portfolio-row{margin-bottom:26px}
+.text-pop-up h5{font-size:22px;margin:0;font-weight:700}
+.text-pop-up{color:#fff;text-align:center;padding:30px 0 0;display:none;position:absolute;top:7%;left:7%;width:86%;height:86%;background:rgba(229,124,28,0.85)}
+.text-pop-up p{padding-bottom:5px;width:85%;margin:0 auto;font-weight:300}
+.interesting{padding-top:15px}
+.interesting span{font-weight:700;text-decoration:underline;text-align:center}
+.work-grid:hover .text-pop-up{display:block}
+.text-middle{padding-top:15%}
+.resume{background:#1d1d1d;padding-top:30px;padding-bottom:80px}
+.resume h2,.resume h3,.resume p{color:#fff}
+.resume h3{font-size:24px;margin-bottom:20px}
+.resume h3 i{color:#e57c1c;padding-right:15px}
+.resume span{background:#e57c1c;padding:0 5px;margin-right:5px}
+.cv-left{border-right:1px solid #fff;padding:0 30px}
+.cv-right{padding:0 45px}
+.smm{margin-bottom:40px}
+.smm i{color:#000;font-size:45px;padding:0 20px}
+.smm i:hover{color:#e57c1c}
+.smm a{color:#000}
+footer{background:#000;padding:20px;color:#fff}
+footer a{color:#e57c1c}
+footer a:hover{text-decoration:none;color:#fff}
+#toTop{width:50px;height:50px;border:1px solid #e57c1c;text-align:center;padding:13px;position:fixed;bottom:10px;right:10px;display:none}
+#toTop i{color:#e57c1c;font-weight:700}
+#toTop:hover{background:#000;border:1px solid #000}
+@media (min-width: 1601px) {
+header{background:url(../img/baner.jpg) no-repeat;min-height:1000px}
+.baner{margin-top:340px}
 }
-
-.padding{
-	margin: 45px 0;
+@media (min-width: 769px) and (max-width: 1050px) {
+.small-one .text-pop-up{padding:0}
+.small-one .text-pop-up p{font-size:13px}
 }
-
-.name{
-	margin-bottom: 50px;
+@media (max-width: 768px) {
+.text-middle-2{padding-top:17%}
+.text-pop-up{display:block}
+.portfolio img{filter:none}
+.resume{padding-bottom:60px}
+.cv-left{border-right:0;border-bottom:1px solid #fff;padding:0 30px 20px}
+.cv-right{padding:20px 30px}
 }
-
-h2{
-	font-size: 40px;
-	color: #000;
+@media (min-width: 1601px) {
+header{background:url(../img/baner.jpg) no-repeat;min-height:1000px}
+.baner{margin-top:340px}
 }
-
-.name hr {
-    background: #e57c1c;
-    width: 60px;
-    height: 2px;
-    margin-top: 30px;
-    border: 0px;
+@media (max-width: 768px) {
+.text-pop-up{display:block}
+.text-middle-2{padding-top:15%}
+.resume{padding-bottom:60px}
+.cv-left{border-right:0;border-bottom:1px solid #fff;padding:0 30px 20px}
+.cv-right{padding:20px 30px}
 }
-
-/* * * ШАПКА НАВИГАЦИЯ БАНЕР * * */
-header{
-	background: url(../img/baner-common.jpg) no-repeat;
-	min-height: 660px;
+@media (max-width: 500px) {
+.logo a{font-size:22px}
+.baner h1{font-size:45px}
+.baner h1 span{color:#e57c1c;font-size:45px}
+.text-middle,.text-middle-2{padding-top:4%}
+.text-pop-up p{font-size:12px;width:95%}
+.interesting{padding-top:0}
 }
-
-nav{
-	background: #000;
-}
-
-nav a{
-	color: #fff;
-}
-
-nav a:hover{
-	text-decoration: none;
-}
-
-.logo{
-	margin-top: 8px;
-}
-
-.logo i{
-	color: #e57c1c;
-	padding-right: 5px;
-}
-
-.logo a{
-	font-weight: 550;
-	font-size: 25px;
-}
-
-.logo a span{
-	color: #e57c1c;
-}
-
-.logo a:hover{
-	color: #fff;
-}
-
-.logo i:hover{
-	text-shadow: 1px 1px rgba(255, 255, 255, .9);
-	transform: rotateY(360deg);
-}
-
-.nav>li>a:focus, 
-.nav>li>a:hover {
-    background-color: transparent;
-    color: #e57c1c;
-}
-
-.icon-bar{
-	background: #fff;
-}
-
-.baner{
-	color: #fff;
-	margin-top: 140px;
-}
-
-.baner h1{
-	font-size: 65px;
-}
-
-.baner h1 span{
-	color: #e57c1c;
-	font-size: 65px;
-}
-
-.baner button{
-	background: transparent;
-	padding: 15px 50px;
-	color: #e57c1c;
-	margin-top: 25px;
-	border: 1px solid rgba(229,124,28,0.25);
-	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
-
-.baner button:hover{
-	background: #000;
-	border: 1px solid #000;
-}
-
-/* * * ПОРТФОЛИО * * */
-.portfolio{
-	margin-bottom: 60px;
-}
-
-.portfolio img{
-	width: 100%;
-	height: auto;
-	filter: grayscale(100%);
-}
-
-.portfolio img:hover{
-	filter: none;
-}
-
-.portfolio-row{
-	margin-bottom: 26px;
-}
-
-.text-pop-up h5{
-	font-size: 22px;
-	margin: 0;
-	font-weight: bold;
-}
-
-.text-pop-up {
-	color: #fff;
-	text-align: center;
-	padding: 30px 0 0 0;
-	display: none;
-	position: absolute;
-	top: 7%;
-    left: 7%;
-    width: 86%;
-    height: 86%;
-	background: rgba(229,124,28,0.85);
-}
-
-.text-pop-up p {
-	padding-bottom: 5px;
-	width: 85%;
-	margin: 0 auto;
-	font-weight: 300;
-}
-
-.interesting{
-	padding-top: 15px; 
-}
-
-.interesting span{
-	font-weight: bold;
-	text-decoration: underline;
-	text-align: center;
-}
-
-.work-grid:hover .text-pop-up{
-	display: block;
-}
-
-.text-middle{
-	padding-top: 15%;
-}
-
-/* * * РЕЗЮМЕ * * */
-.resume{
-	background: #1d1d1d;
-	padding-top: 30px;
-	padding-bottom: 80px;
-}
-
-.resume h2, .resume h3, .resume p{
-	color: #fff;
-}
-
-.resume h3{
-	font-size: 24px;
-	margin-bottom: 20px;
-}
-
-.resume h3 i{
-	color: #e57c1c;
-	padding-right: 15px;
-}
-
-.resume span{
-	background: #e57c1c;
-	padding: 0 5px;
-	margin-right: 5px;
-}
-
-.cv-left{
-	border-right: 1px solid #fff;
-	padding: 0 30px;
-}
-
-.cv-right{
-	padding: 0 45px;
-}
-
-/* * * КОНТАКТЫ * * */
-.smm{
-	margin-bottom: 40px;
-}
-
-.smm i{
-	color: #000;
-	font-size: 45px;
-	padding: 0 20px;
-}
-
-.smm i:hover{
-	color: #e57c1c;
-}
-
-.smm a{
-	color: #000;
-}
-
-/* * * ПОДВАЛ * * */
-footer{
-	background: #000;
-	padding: 20px;
-	color: #fff;
-}
-
-footer a{
-	color: #e57c1c;
-}
-
-footer a:hover{
-	text-decoration: none;
-	color: #fff;
-}
-
-/* * * КНОПКА НАВЕРХ * * */
-#toTop{
-	width: 50px;
-	height: 50px;
-	border: 1px solid #e57c1c;
-	text-align: center;
-	padding: 13px;
-	position: fixed;
-	bottom: 10px;
-	right: 10px;
-	display: none;
-}
-
-#toTop i{
-	color: #e57c1c;
-	font-weight: bold;
-}
-
-#toTop:hover{
-	background: #000;
-	border: 1px solid #000;
-}	
-
-/* * * МЕДИА ЗАПРОСЫ * * */
-@media (min-width: 1601px){
-	header{
-	background: url(../img/baner.jpg) no-repeat;
-	min-height: 1000px;
-	}
-
-	.baner{
-	margin-top: 340px;
-	}
-}
-
-@media (min-width: 769px) and (max-width: 1050px){
-	.small-one .text-pop-up {
-	padding: 0px;
-	}
-
-	.small-one .text-pop-up p{
-	font-size: 13px;
-	}
-}
-
-@media (max-width: 768px){
-	.text-middle-2{
-	padding-top: 17%;
-	}
-
-	.text-pop-up {
-	display: block;
-	}
-
-	.portfolio img{
-	filter: none;
-	}
-
-	.resume{
-	padding-bottom: 60px;
-	}
-
-	.cv-left{
-	border-right: 0px;
-	border-bottom: 1px solid #fff;
-	padding: 0 30px 20px 30px;
-	}
-	.cv-right{
-	padding: 20px 30px;
-	}
-}
-
-/* * * МЕДИА ЗАПРОСЫ * * */
-@media (min-width: 1601px){
-	header{
-	background: url(../img/baner.jpg) no-repeat;
-	min-height: 1000px;
-	}
-
-	.baner{
-	margin-top: 340px;
-	}
-}
-
-@media (max-width: 768px){
-	.text-pop-up {
-	display: block;
-	}
-
-	.text-middle-2{
-	padding-top: 15%;
-	}
-
-	.resume{
-	padding-bottom: 60px;
-	}
-
-	.cv-left{
-	border-right: 0px;
-	border-bottom: 1px solid #fff;
-	padding: 0 30px 20px 30px;
-	}
-	.cv-right{
-	padding: 20px 30px;
-	}
-}
-
-@media (max-width: 500px){
-	.logo a{
-		font-size: 22px;
-	}
-
-	.baner h1{
-	font-size: 45px;
-	}
-
-	.baner h1 span{
-	color: #e57c1c;
-	font-size: 45px;
-	}
-
-	.text-middle, .text-middle-2{
-    padding-top: 4%;
-	}
-
-	.text-pop-up p{
-	font-size: 12px;
-	width: 95%;
-	}
-
-	.interesting{
-	padding-top: 0px; 
-	}
-}
-
