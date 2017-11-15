@@ -1,1 +1,1 @@
-
+$(".slick").slick({dots:!0,arrows:!1,infinite:!0,slidesToShow:2,slidesToScroll:2});
