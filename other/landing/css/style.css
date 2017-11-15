@@ -1,1 +1,99 @@
-r
+*{transition:.8s ease-in-out;font-family:'Exo',sans-serif;font-size:16px}
+.padding{margin:100px 0}
+.the-name{color:#ffd119;text-transform:uppercase;font-size:12px}
+.common-text{color:#282828;margin-top:25px}
+h3 span{color:#ffd119;font-size:40px}
+p{color:#606060}
+h3{font-size:40px}
+h4{font-size:22px;font-weight:700}
+button{color:#fff;font-size:16px;text-shadow:0 1px 2px rgba(0,0,0,0.25);padding:15px 70px;border-radius:3px;background:#ffd119;border-top:0;border-left:0;border-right:0;border-bottom:3px solid #ebc118;margin-top:30px}
+button:hover,button:focus,button:active{background:#323969;border-bottom:3px solid #020a42}
+.os-animation{opacity:0}
+.os-animation.animated{opacity:1}
+video{width:100%;overflow:hidden}
+.overlay{position:absolute;top:0;left:0;width:100%;height:100%}
+.overlay h1{color:#fffffd;font-size:60px;margin-top:13%}
+.design{background:url(../img/bg-text.png) no-repeat 100% 100%;margin-top:-6px}
+.features{background:url(../img/bg-features.jpg) no-repeat 100% 100%;min-height:610px}
+.features h3{margin-bottom:60px}
+.design2{background:url(../img/bg-text2.png) no-repeat 100% 100%;min-height:430px}
+.design2 .laptop{max-width:350px;height:auto}
+.people{background:url(../img/bg-people.jpg) no-repeat 100% 100%;min-height:610px}
+.people .ava{width:60px;height:auto;margin-bottom:15px}
+.people h5{color:#fff;font-size:18px}
+.people .title-of-the-person{color:#ff6d6d;margin-bottom:15px}
+.people .common-text{color:#bfbfc0}
+.brands{margin-top:70px}
+.people .brand{padding:15px 3%;opacity:.7}
+.features2{background:#f6f5f3}
+.features2 .common-text{margin:25px 150px 0}
+.form{background:#323969}
+.form h3{color:#fff;margin-bottom:90px}
+.form input{margin:10px 0;width:100%;padding:13px 0 13px 20px;background:#464c77;border:1px solid #999cb4;border-radius:3px;color:#fff}
+input::-webkit-input-placeholder{color:#fff}
+input:-moz-input-placeholder{color:#fff}
+input: -ms-input-placeholder{color:#fff}
+input:input-placeholder{color:#fff}
+.form .btn{position:relative}
+.form button{margin-top:0}
+.form .arrow{position:absolute;top:-40px;left:30px}
+.form .try-now{color:#fff;font-size:13px;position:absolute;top:-45px;left:70px}
+.form button:hover,.form button:focus,.form button:active{background:#999cb4;border-bottom:3px solid #7e84b4}
+.form .common-text,.form .common-text a{color:#b8b9c3}
+.form .common-text a{text-decoration:underline}
+.form .common-text a:hover,.form .common-text a:focus,.form .common-text a:active{color:#ffd119}
+footer{background:url(../img/bg-footer.png) no-repeat 100% 100%}
+footer .padding{margin-top:80px}
+footer .common-text{font-size:12px;margin-top:15px}
+footer ul{padding-left:0}
+footer ul li{list-style:none}
+footer ul li a{color:#8a8a8a;font-size:14px}
+footer ul li a:hover,footer ul li a:focus,footer ul li a:active{color:#ffd119;text-decoration:none}
+footer form{margin-top:10px}
+footer form input{width:100%;background:#f6f6f6;border:1px solid #b8b8bf;border-radius:3px;padding:7px 0 7px 15px;text-transform:uppercase;font-size:13px}
+input::-webkit-input-placeholder{color:#b1b1b1}
+input:-moz-input-placeholder{color:#b1b1b1}
+input: -ms-input-placeholder{color:#b1b1b1}
+input:input-placeholder{color:#b1b1b1}
+#searchform{position:relative}
+footer form button{position:absolute;padding:5px 10px;margin:0;right:0;top:0}
+footer form button i{color:#fff}
+footer .social{margin-top:15px}
+footer .social a{padding:0 10px;color:#cbcbcb}
+footer .social a:hover,footer .social a:focus,footer .social a:active{color:#ffd119}
+#toTop{width:50px;height:50px;border:2px solid #ffd119;text-align:center;padding:13px;position:fixed;bottom:10px;right:10px;display:none}
+#toTop i{color:#000;font-weight:700}
+#toTop:hover,#toTop:focus,#toTop:active{background:#ffd119;cursor:pointer}
+@media (min-height: 300px) and (max-width: 376px) {
+.overlay h1{font-size:24px!important;margin-top:4%!important}
+footer .logo{margin:0 32%!important}
+}
+@media (max-width: 700px) {
+.overlay h1{font-size:30px;margin-top:8%}
+button{padding:10px 50px}
+h3,h3 span{font-size:25px}
+}
+@media (max-width: 991px) {
+section, footer{
+	padding: 30px 0;
+}
+.padding{margin:0px 0}
+.features{background:#f6f3f3}
+.last-p{margin-bottom:30px}
+.design2{min-height:290px}
+.features2 .common-text{margin:25px 20px 0}
+.people{padding-bottom:30px}
+footer .padding{margin-top:30px}
+}
+@media (max-width: 1199px) {
+footer .logo{margin:0 43%}
+}
+@media (max-width: 1250px) {
+.design,.design2,footer{background:none}
+}
+@media (min-width: 1600px) and (max-width: 2199px) {
+.overlay h1{font-size:70px;margin-top:15%}
+}
+@media (min-width: 2200px) {
+.overlay h1{font-size:90px;margin-top:24%}
+}
