@@ -33,7 +33,7 @@ h2{font-size:40px;letter-spacing:1px;}
 }
 .header{background:url(../img/header__bg.jpg) no-repeat center top fixed;-ms-background-size:cover;background-size:cover;min-height:670px;}
 .navigation{background:#000;line-height:4;letter-spacing:1px;position:fixed;top:0px;width:100%;z-index:2;}
-.navigation .navbar-toggle{padding:20px 10px;}
+.navigation .navbar-toggle{padding:25px 10px;}
 .navigation .icon-bar{background:#fff;}
 .logo__link{color:#fff;font-size:20px;}
 .logo__lik-icon{font-size:25px;}
