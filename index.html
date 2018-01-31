@@ -1,147 +1,165 @@
 <!DOCTYPE html>
-<html lang ="ru">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Портфолио html верстальщика</title>
-	<meta name="keywords" content="Портфолио, верстка, html, html5, css, css3, less, jade, адаптивная верстка, резюме фронтенд, frontend портфолио верстальщика, верстка сайтов>
-	<meta name="description" content="Junior html-верстальщик. Портфолио создано на Bootstrap 3.3.7.">
-	<link rel="icon" href="img/fav.png" type="image/x-icon">	
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Html-верстальщик в Крыму</title>
+		<meta name="keywords" content="Портфолио, верстка, html, html5, css, css3, less, адаптивная верстка, резюме фронтенд, frontend портфолио верстальщика, верстальщик в Крыму, верстальщик в Симферополе, верстка сайтов">
+		<meta name="description" content="Junior html-верстальщик. Портфолио создано на Bootstrap 3.3.7. + БЭМ.">
+		<link rel="icon" href="img/favicon.ico" type="image/x-icon">	
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+	</head>
 
-<body>
-	<header id="main">
-		<nav class="navbar">
+	<body>
+		<!---Прелоедер-->
+		<div id="before-load">
+		<div class='loader'>
+			<div class='cssload-inner cssload-one'></div>
+			<div class='cssload-inner cssload-two'></div>
+			<div class='cssload-inner cssload-three'></div>
+		</div>
+		</div>
+		<!---Прелоедер-->
+		<header class="header" id="main">
+			<nav class="navigation">
+				<div class="container">
+					<div class="navbar-header col-xs-2 col-sm-7 pull-right">
+						<button type="button" class="navbar-toggle collapsed " data-toggle="collapse" data-target="#navbar-main" aria-expanded="false">
+					   		<span class="icon-bar"></span>
+					   		<span class="icon-bar"></span>
+					   		<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-4 col-xs-10 logo">
+						<a href="#main" class="logo__link"><i class="fa fa-lightbulb-o logo__link-icon" aria-hidden="true"></i> Power of HTML</a>
+					</div>
+					<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 collapse navbar-collapse pull-right" id="navbar-main">
+						<ul class="nav navbar-nav navigation__list">
+							<li class="active navigation__list-item">
+								<a href="#main" class="navigation__list-link">Главная
+								</a>
+							</li>
+							<li class="navigation__list-item">
+								<a href="#works" class="navigation__list-link">Портфолио</a>
+							</li>
+							<li class="navigation__list-item">
+								<a href="#cv" class="navigation__list-link">Обо мне</a>
+							</li>
+							<li class="navigation__list-item">
+								<a href="#contact" class="navigation__list-link">Контакты</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
 			<div class="container">
-				<div class="navbar-header col-xs-2 col-sm-7 pull-right">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-main" aria-expanded="false">
-					   <span class="icon-bar"></span>
-					   <span class="icon-bar"></span>
-					   <span class="icon-bar"></span>
-				</button>
-				</div>
-				<div class="col-xs-10 col-sm-5 col-md-4 col-lg-3 logo">
-					<a href="#main"><i class="fa fa-superpowers" aria-hidden="true"></i> Power<span>_</span>of<span>_</span>HTML</a>
-				</div>
-				<div class="col-xs-12 col-sm-12 col-md-8 col-lg-9 pull-right collapse navbar-collapse navigation" id="navbar-main">
-					<ul class="nav navbar-nav">
-						<li class="active"><a href="#main">Главная</a></li>
-						<li><a href="#works">Портфолио</a></li>
-						<li><a href="#cv">Обо мне</a></li>
-						<li><a href="#contact">Контакты</a></li>
-					</ul>
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center cv">
+					<h1>Junior <span class="colored">html</span>-верстальщик</h1>
+					<h3>cкачать резюме</h3>
+					<button class="cv__btn" onClick="window.location.href='https://github.com/htmlpower/htmlPower.github.io/blob/master/img/Semenenko_CV.docx?raw=true'"><i class="fa fa-download cv__btn-icon" aria-hidden="true"></i></button>
 				</div>
 			</div>
-		</nav>
-		<div class="container">
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center baner">
-				<h1>Junior <span>html</span>-верстальщик</h1>
-				<h3>cкачать резюме</h3>
-				<button onClick="window.location.href='https://github.com/htmlpower/htmlPower.github.io/blob/master/img/Semenenko_CV.docx?raw=true'"><i class="fa fa-download" aria-hidden="true"></i></button>
+		</header>
+		<section class="portfolio" id="works">
+			<div class="container">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+					<h2>Портфолио</h2>
+					<hr class="name__line">
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 portfolio__item">
+					<a href="other/smart/index.html" target="blank">
+						<img src="img/smart.jpg" alt="">
+					</a>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 portfolio__item">
+					<a href="other/landing/index.html" target="blank">
+						<img src="img/landing.jpg" alt="">
+					</a>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 portfolio__item">
+					<a href="other/axit/index.html" target="blank">
+						<img src="img/axit.jpg" alt="">
+					</a>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 portfolio__item">
+					<a href="other/card-page/index.html" target="blank">
+						<img src="img/card-page.jpg" alt="">
+					</a>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 portfolio__item">
+					<a href="other/golden/index.html" target="blank">
+					<img src="img/golden.jpg" alt="">
+					</a>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 portfolio__item">
+					<a href="other/priroll/index.html" target="blank">
+					<img src="img/priroll.jpg" alt="">
+					</a>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 portfolio__item">
+					<a href="other/crowdme/index.html" target="blank">
+						<img src="img/crowdme.jpg" alt="">
+					</a>
+				</div>
 			</div>
-		</div>
-	</header>
-
-<!-- - ПОРТФОЛИО - -->
-	<section class="padding portfolio" id="works">
-		<div class="container">
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center name">
-				<h2>Портфолио</h2>
-				<hr>
+		</section>
+		<section class="about-me" id="cv">
+			<div class="container">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+					<h2>Резюме</h2>
+					<hr class="name__line">
+				</div>
+				<div class=" col-xs-12 col-sm-12 col-md-6 col-lg-6 about-me__education">
+					<h3 class="text-center about-me__header"><i class="fa fa-user-o hidden-xs about-me__icon" aria-hidden="true"></i> Персональная информация:</h3>
+					<p><span class="text-hilight">ФИО:</span>Семененко Алёна Андреевна</p>
+					<p><span class="text-hilight">Территориально нахожусь:</span> г. Симферополь, Крым.</p>
+					<p><span class="text-hilight">Дата рождения:</span> 16 февраля 1994 г.</p>
+					<p><span class="text-hilight">Образование:</span> магистр по специальности "Экономика инновационной деятельности"(КФУ им. В.И. Вернадского ИЭиУ).</p>
+					<p><span class="text-hilight">Дополнительное образование:</span> школа иностранных языков NewTone, онлайн-курсы, проф.литература.</p>
+				</div>
+				<div class=" col-xs-12 col-sm-12 col-md-6 col-lg-6 about-me__skills">
+					<h3 class="text-center about-me__header"><i class="fa fa-id-card-o hidden-xs about-me__icon" aria-hidden="true"></i> Профессиональные навыки:</h3>
+					<p><span class="text-hilight">Знания в области web:</span> HTML5, CSS3, JS(начальный уровень), Flexbox, адаптивная верстка, БЭМ.</p>
+					<p><span class="text-hilight">Фреймворки:</span> Bootstrap, Less, Jade.</p>
+					<p><span class="text-hilight">Программы:</span> Adobe Photoshop.</p>
+					<p><span class="text-hilight">CMS/CRM:</span> WordPress, Битрикс.</p>
+					<p><span class="text-hilight">Знание языков:</span> русский, украинский, английский(upper-intermediate).</p>
+				</div>
 			</div>
-			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 portfolio-row work-grid">
-				<a href="other/smart/index.html" target="blank"><img src="img/smart.jpg"></a>
+		</section>
+		<section class="find-me" id="contact">
+			<div class="container">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+					<h2>Связаться со мной</h2>
+					<hr class="name__line">
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center find-me__smm">
+					<a class="find-me-link" href="https://vk.com/id243195276" target="blank"><i class="fa fa-vk find-me-icon" aria-hidden="true"></i>vk.com/id243195276</a>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center find-me__smm">
+					<a class="find-me-link" href="skype:i.am.extraterrestrial?chat"><i class="fa fa-skype find-me-icon" aria-hidden="true"></i>i.am.extraterrestrial</a>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center find-me__smm">
+					<a class="find-me-link" href="mailto:kzyjxrf@yandex.ru"><i class="fa fa-envelope-o find-me-icon" aria-hidden="true"></i>kzyjxrf@yandex.ru</a>
+				</div>
 			</div>
-			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 portfolio-row work-grid">
-				<a href="other/landing/index.html" target="blank"><img src="img/landing.jpg"></a>
-			</div>
-			<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 portfolio-row work-grid">
-				<a href="other/axit/index.html" target="blank"><img src="img/axit.jpg"></a>
-			</div>
-			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 portfolio-row work-grid small-one">
-				<a href="other/card-page/index.html" target="blank"><img src="img/card-page.jpg"></a>
-			</div>
-			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 portfolio-row work-grid small-one">
-				<a href="other/golden/index.html" target="blank"><img src="img/golden.jpg"></a>
-			</div>
-			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 portfolio-row work-grid">
-				<a href="other/priroll/index.html" target="blank"><img src="img/priroll.jpg"></a>
-			</div>
-			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 portfolio-row work-grid">
-				<a href="other/crowdme/index.html" target="blank"><img src="img/crowdme.jpg"></a>
-			</div>
-		</div>
 	</section>
+		<footer class="footer">
+			<div class="container">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+					<div class="footer-love">
+						<span>made with <i class="fa fa-heart-o" aria-hidden="true"></i> to black color</span>
+					</div>
+					<span>:D</span>
+				</div>
+			</div>
+		</footer>
+		
 
-<!-- - РЕЗЮМЕ - -->	
-	<section class="padding resume" id="cv">
-		<div class="container">
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center name">
-				<h2>Резюме</h2>
-				<h3>мои знания и образование</h3>
-				<hr>
-			</div>
-			<div class=" col-xs-12 col-sm-12 col-md-6 col-lg-6 cv-left">
-				<h3 class="text-center"><i class="fa fa-user-o hidden-xs" aria-hidden="true"></i> Персональная информация:</h3>
-				<p><span>ФИО:</span>Семененко Алёна Андреевна</p>
-				<p><span>Территориально нахожусь:</span> г.Симферополь, Крым.</p>
-				<p><span>Дата рождения:</span> 16 февраля 1994 г.</p>
-				<p><span>Образование:</span> магистр по специальности "Экономика инновационной деятельности"(КФУ им. В.И. Вернадского ИЭиУ).</p>
-				<p><span>Дополнительное образование:</span> школа иностранных языков NewTone, онлайн-курсы.</p>
-			</div>
-			<div class=" col-xs-12 col-sm-12 col-md-6 col-lg-6 cv-right">
-				<h3 class="text-center"><i class="fa fa-id-card-o hidden-xs" aria-hidden="true"></i> Профессиональные навыки:</h3>
-				<p><span>Знания в области WEB:</span> HTML5, CSS3, JS(начальный уровень), flexbox, адаптивная верстка.</p>
-				<p><span>Фреймворки:</span> Bootstrap,  Foundation, Less, Jade.</p>
-				<p><span>Программы:</span> Adobe Photoshop, GIMP.</p>
-				<p><span>CMS:</span> WordPress.</p>
-				<p><span>Для верстки использую:</span> Prefixfree, Normalize, Slick, Font Awesome, Animate, Waypoints  и т.д.</p>
-				<p><span>Знание языков:</span> русский, украинский, английский(upper-intermediate).</p>
-			</div>
-		</div>
-	</section>
-	
-<!-- - КОНТАКТЫ - -->
-	<section class="padding find-me" id="contact">
-		<div class="container">
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center name">
-				<h2>Связаться со мной</h2>
-				<hr>
-			</div>
-			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center smm">
-				<a href="https://vk.com/id243195276" target="blank"><i class="fa fa-vk" aria-hidden="true"></i><br><br>vk.com/id243195276</a>
-			</div>
-			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center smm">
-				<a href="skype:i.am.extraterrestrial?chat"><i class="fa fa-skype" aria-hidden="true"></i><br><br>i.am.extraterrestrial</a>
-			</div>
-			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center smm">
-				<a href="mailto:kzyjxrf@yandex.ru"><i class="fa fa-envelope-o" aria-hidden="true"></i><br><br>kzyjxrf@yandex.ru</a>
-			</div>
-		</div>
-	</section>
-
-<!-- - ПОДВАЛ - -->	
-	<footer>
-		<div class="container">
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-				<p>2017 г.</p>
-			</div>
-		</div>
-	</footer>
-
-<!-- - КНОПКА НАВЕРХ - -->	
-	<div id="toTop">
-		<i class="fa fa-arrow-up" aria-hidden="true"></i>
-	</div>
-
-<!-- - ФАЙЛЫ js - -->	
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<script src="js/script.js"></script>
-</body>
+		<script src="./js/jquery-1.11.2.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script src="./js/script.js"></script>
+	</body>
 </html>
