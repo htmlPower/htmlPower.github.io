@@ -83,7 +83,7 @@ h2{font-size:40px;letter-spacing:1px;}
 .about-me__skills{padding:0 15px;}
 .find-me__smm{padding-top:30px;}
 }
-@media (max-width:767px){.navigation__list-item{padding-right:30px;
+@media (max-width:767px){.navigation__list-item{padding-right:30px;}
 h1{font-size:40px;}
 h2{font-size:30px;}
 }
