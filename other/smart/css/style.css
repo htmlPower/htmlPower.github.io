@@ -97,35 +97,9 @@ footer{background:#f7f7f7;padding-top:30px}
 #works .row{margin-top:991px}
 .box-team{margin-bottom: 45px;}
 #works .row{margin-top:0px}
-}
-
-@media (max-width: 991px) and (min-width: 600px){
-	.hover-effect-team{padding:130px 30px 10px;}
-}
-
-@media (max-width: 440px) and (min-width: 361px){
-	.hover-effect-team{padding:35px 30px 0}
-}
-
-@media (max-width: 420px){
-.hover-effect-team .common-text {color: #fff;}
-.progress {margin: 0;}
-.hover-effect-team .bottom-text-hover{margin-top:0px}
-}
-
-@media (max-width: 360px){
-.hover-effect-team{padding: 15px 20px}
-.hover-effect-team .bottom-text-hover .h4 {font-size: 15px;}
+.hover-effect-team{padding:130px 30px 10px;}
 }
 
 @media (max-width: 991px) and (min-width: 768px) {
-	.col-offset-xs {
-		margin-left: 16.666666666%;
-	}
-}
-
-@media (max-width: 767px){
-	.col-offset-xs {
-		margin-left: 8.333333333%;
-	}
+	.col-offset-xs {margin-left: 16.666666666%;}
 }
