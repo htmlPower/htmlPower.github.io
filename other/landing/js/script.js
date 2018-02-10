@@ -1,5 +1,5 @@
 $(window).load(function() {
-  $('#before-load').find('.loader').fadeOut().end().delay(300).fadeOut('slow');
+  $('#before-load').find('.loader').fadeOut().end().delay(400).fadeOut('slow');
 });
 $(function(){$(window).scroll(function()
   {0!=$(this).scrollTop()?$("#toTop").fadeIn():$("#toTop").fadeOut()}),$("#toTop").click(function()
