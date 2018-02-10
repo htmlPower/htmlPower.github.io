@@ -74,15 +74,14 @@ button{padding:10px 50px}
 h3,h3 span{font-size:25px}
 }
 @media (max-width: 991px) {
-section, footer{
-	padding: 30px 0;
-}
+section, footer{padding: 30px 0;}
 .padding{margin:0px 0}
 .features{background:#f6f3f3}
 .last-p{margin-bottom:30px}
 .design2{min-height:290px}
 .features2 .common-text{margin:25px 20px 0}
 .people{padding-bottom:30px}
+.people .ava {padding-top: 25px;}
 footer .padding{margin-top:30px}
 }
 @media (max-width: 1199px) {
