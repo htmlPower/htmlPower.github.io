@@ -6,7 +6,12 @@ h3 span{color:#ffd119;font-size:40px}
 p{color:#606060}
 h3{font-size:40px}
 h4{font-size:22px;font-weight:700}
-#before-load{position:fixed;left:0;top:0;right:0;bottom:0;background:#000;z-index:1001;}
+#before-load{  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #000;z-index:1001;}
 @-webkit-keyframes loader {
   50% {-webkit-transform:rotate(-180deg);transform:rotate(-180deg)}
   100% {-webkit-transform:scaleX(1);transform:scaleX(1)}}
