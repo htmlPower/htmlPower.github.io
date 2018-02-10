@@ -1,4 +1,7 @@
+/**Общие стили**/
 *{
+	-webkit-transition: .6s ease-in-out;
+	-o-transition: .6s ease-in-out;
 	transition: .6s ease-in-out;
 }
 
@@ -54,17 +57,27 @@ button:hover, button:focus, button:active{
 	background: #000;
 }
 
+/*Банер, навигационное меню*/
 .navbar-default {
     background-color: #000 !important;
     border-color: #000;
+    padding: 2px 0;
 }
 
 .navbar-default .navbar-nav>li>a {
     color: #fff;
 }
 
-.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:active {
+.nav>li>a{
+	border-bottom: 1px solid #000;
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:active {
+    background-color: transparent;
     color: #10c9c3;
+    border-bottom: 1px solid #10c9c3;
 }
 
 .baner{
@@ -72,14 +85,53 @@ button:hover, button:focus, button:active{
 	height: 650px;
 }
 
-.baner-text{
-	margin-top: 17%;
+.form-1{
+	background-color: #f5f5f5;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-top: 13%;
 }
 
+.form-1 h3{
+	padding-bottom: 15px;
+	text-align: center;
+}
+
+.form-1 h3 span{
+	color: #10c9c3;
+	font-weight: 600;
+}
+
+.form-1 input,
+.form-1 textarea{
+	width: 100%;
+	padding: 20px 0;
+	border: none;
+	border-bottom: 1px solid #f5f5f5;
+	padding-left: 40px;
+}
+
+.form-1 textarea{
+	padding-bottom: 22px;
+}
+
+.form-1 button{
+	width: 100%;
+	background: #10c9c3;
+	border: transparent;
+	padding: 23px 0;
+	color: #fff;
+}
+
+.form-1 button:hover{
+	background: #000;
+}
+
+/*От директора компании*/
 .progress-block{
 	background: url(../img/baner2.jpg) no-repeat;
 }
-
+ 
 .progress-block .h4{
 	margin-top: 25px;
 }
@@ -93,6 +145,7 @@ button:hover, button:focus, button:active{
 	background-color: #10c9c3;
 }
 
+/*О нас в цифрах*/
 .numbers{
 	background: #10c9c3;
 }
@@ -100,13 +153,12 @@ button:hover, button:focus, button:active{
 .numbers i{
 	color: #fff;
 	font-size: 37px;
-	margin-top: 7px;
+	margin-top: 15px;
 }
 
 .numbers p{
 	color: #fff;
 	font-size: 12px;
-	margin-left: 30px;
 }
 
 .numbers p, .services .first{
@@ -120,6 +172,7 @@ button:hover, button:focus, button:active{
 	font-weight: bold;
 }
 
+/*Портфолио*/
 .work-item{
 	padding: 0px;
 }
@@ -148,69 +201,140 @@ button:hover, button:focus, button:active{
 	position: absolute;
 	top: 50%;
 	left: 50%;
+	-webkit-transition: -webkit-transform calc(var(--photoboxAnimationDuration, .8s)) ease;
+	transition: -webkit-transform calc(var(--photoboxAnimationDuration, .8s)) ease;
+	-o-transition: transform calc(var(--photoboxAnimationDuration, .8s)) ease;
 	transition: transform calc(var(--photoboxAnimationDuration, .8s)) ease;
-	transform: translate(-50%, -50%) scale(0);
+	transition: transform calc(var(--photoboxAnimationDuration, .8s)) ease, -webkit-transform calc(var(--photoboxAnimationDuration, .8s)) ease;
+	-webkit-transform: translate(-50%, -50%) scale(0);
+	    -ms-transform: translate(-50%, -50%) scale(0);
+	        transform: translate(-50%, -50%) scale(0);
 }
 
 .work-item:hover .work-item-img:before{
-	transform: translate(-50%, -50%) scale(4);
+	-webkit-transform: translate(-50%, -50%) scale(4);
+	    -ms-transform: translate(-50%, -50%) scale(4);
+	        transform: translate(-50%, -50%) scale(4);
 }
 
 .work-item .work-item-text{
 	width: 95%;
 	text-align: center;
-	transform: translate(-200%, -50%);
+	-webkit-transform: translate(-200%, -50%);
+	    -ms-transform: translate(-200%, -50%);
+	        transform: translate(-200%, -50%);
+	-webkit-transition: -webkit-transform calc(var(--photoboxAnimationDuration, .8s)) ease-out;
+	transition: -webkit-transform calc(var(--photoboxAnimationDuration, .8s)) ease-out;
+	-o-transition: transform calc(var(--photoboxAnimationDuration, .8s)) ease-out;
 	transition: transform calc(var(--photoboxAnimationDuration, .8s)) ease-out;
+	transition: transform calc(var(--photoboxAnimationDuration, .8s)) ease-out, -webkit-transform calc(var(--photoboxAnimationDuration, .8s)) ease-out;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 }
 
-.work-item-text i{
-	color: #10c9c3;
-	font-size: 35px;
-}
-
-.work-item-text i:hover{
-	color: #000;
+.work-item-text{
+	color: #fff;
+	font-size: 17px;
+	font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .work-item:hover .work-item-text{
-	transition-duration: calc(var(--photoboxAnimationDuration, .8s));
-	transform: translate(-50%, -50%);
+	-webkit-transition-duration: calc(var(--photoboxAnimationDuration, .8s));
+	     -o-transition-duration: calc(var(--photoboxAnimationDuration, .8s));
+	        transition-duration: calc(var(--photoboxAnimationDuration, .8s));
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
 }
 
-.more{
+/*Цены*/
+.pricing{
 	background: #f5f5f5;
+	padding: 80px 0;
+}
+
+.pricing .p-common-text{
+	padding-bottom: 10px;
+}
+
+.lower{
+	margin-top: 45px;
+}
+
+.pricing-row-top{
+	background: #333333;
+	color: #fff;
+}
+
+.pricing-row-top h3{
+	color: #fff;
 	padding: 20px 0;
+	border-bottom: 1px solid #f5f5f5;
 }
 
-.more .h4{
-	color: #8f8f8f;
+.pricing-row-top .price{
+	font-size: 70px;
+	font-weight: 600;
+	padding: 5px 0;
 }
 
-.more a:hover, .more a:focus, .more a:active{
-	text-decoration: none;
+.pricing-row-top .price i{
+	font-size: 30px;
 }
 
-video {
-	width: 80%;
-	margin: 0 10%;
-	height: auto;
-	max-height: 100%;
+.pricing-row-top .italic{
+	font-style: italic;
+	color: #f5f5f5;
+	padding-bottom: 5px;
+}
+.price {
+	color: #10c9c3;
 }
 
-.services{
-	background: #f5f5f5;
+.divider{
+	height: 5px;
+	background: #10c9c3;
+	margin-top: -10px;
+}
+
+.divider-2{
+	background: #10c9c3;
+	padding: 15px 0 5px 0;
+	margin-top: -10px;
+	text-transform: uppercase;
+}
+
+.divider-2 p{
+	color: #fff;
+}
+
+.pricing-row-bottom{
+	background: #fff;
+	color: #10c9c3;
+}
+
+.pricing-row-bottom .features{
+	display: block;
+	padding: 10px 0;
+	text-transform: uppercase;
+	border-bottom: 1px solid #f5f5f5;
+}
+
+.pricing-row-bottom .features:last-child{
+	border-bottom: none;
 }
 
 .services-item{
 	padding: 0 15px;
 }
 
-.services i{
+/*Услуги*/
+.services-item i{
 	margin-bottom: 15px;
-	color: #656565;
+	color: #000;
 	font-size: 37px;
 }
 
@@ -226,6 +350,7 @@ video {
 	margin-top: 0px;
 }
 
+/*Слайдер с цитатами*/
 .testimonials{
 	background: #10c9c3;
 }
@@ -241,6 +366,7 @@ video {
    	color: #fff !important;
 }
 
+/*Форма обратной связи*/
 .contact{
 	background: #f5f5f5;
 }
@@ -259,6 +385,7 @@ video {
 	margin-bottom: 80px;
 }
 
+/*Подвал*/
 footer{
 	background: #000;
 	padding: 50px 0;
@@ -297,10 +424,6 @@ footer ul li a, footer li a:hover, footer li a:focus, footer li a:active{
 		padding: 60px 0;
 	}
 
-	.numbers-item{
-		text-align: center;
-	}
-
 	.numbers .margin, .services .margin{
 		margin: 20px 0;
 	}
@@ -323,15 +446,8 @@ footer ul li a, footer li a:hover, footer li a:focus, footer li a:active{
 }
 
 @media (max-width: 767px){
-	.baner p{
-		color: #fff;
-	}
-
-	.baner-text{
-	margin-top: 40%;
-	padding: 15px;
-	background-color: rgba(0,0,0,0.10);
-	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	.nav>li {
+  	  text-align: center;
 	}
 
 	footer .company, footer .tel{
