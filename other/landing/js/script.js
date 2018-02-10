@@ -1,6 +1,6 @@
-//$(window).load(function() {
-  //$('#before-load').find('.loader').fadeOut().end().delay(400).fadeOut('slow');
-//});
+$(window).load(function() {
+  $('#before-load').find('.loader').fadeOut().end().delay(400).fadeOut('slow');
+});
 $(function(){$(window).scroll(function()
   {0!=$(this).scrollTop()?$("#toTop").fadeIn():$("#toTop").fadeOut()}),$("#toTop").click(function()
   {$("body,html").animate({scrollTop:0},800)}),
