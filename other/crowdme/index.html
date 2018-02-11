@@ -1,17 +1,13 @@
 <!DOCTYPE html>
-<html lang ="ru">
+<html lang ="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Crowdme</title>
 	<link rel="icon" href="img/fav.png" type="image/x-icon">
-	<script src="js/prefixfree.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<script src="js/jquery-1.11.0.js"></script>
-	<script src="js/waypoints.min.js"></script>
-    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 <!-- - КНОПКА ПОДНЯТЬСЯ НАВЕРХ - -->	
@@ -29,34 +25,6 @@
 	});
 	});
 	</script>
-	
-	<script type="text/javascript">
-       $(function(){
-            function onScrollInit( items, trigger ) {
-                items.each( function() {
-                var osElement = $(this),
-                    osAnimationClass = osElement.attr('data-os-animation'),
-                    osAnimationDelay = osElement.attr('data-os-animation-delay');
-                  
-                    osElement.css({
-                        'animation-delay':          osAnimationDelay
-                    });
-
-                    var osTrigger = ( trigger ) ? trigger : osElement;
-                    
-                    osTrigger.waypoint(function() {
-                        osElement.addClass('animated').addClass(osAnimationClass);
-                        },{
-                            triggerOnce: true,
-                            offset: '70%'
-                    });
-                });
-            }
-
-            onScrollInit( $('.os-animation') );
-            onScrollInit( $('.staggered-animation'), $('.staggered-animation-container') );
-});
-</script>
 </head>
 
 <body>
@@ -64,8 +32,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-6 col-sm-5 col-md-2 col-lg-2 logo">
-     				 	<a href="#"><img src="img/logo.png" class="animated slideInLeft"><span>Crowdme</span></a>
-     				 	</div>
+     				 <a href="#"><img src="img/logo.png"><span>Crowdme</span></a>
+     			</div>
 				<nav class="navbar">
 				    <div class="navbar-header">
       					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-main" aria-expanded="false">
@@ -77,10 +45,10 @@
     				<div class="col-md-10 col-lg-10">
 	    				<div class="collapse navbar-collapse click" id="navbar-main">
 						    <ul class="nav navbar-nav pull-right">
-						        <li><a href="#header">HOME</a></li>
 						        <li><a href="#how--it-works">HOW IT WORKS</a></li>
+						        <li><a href="#potfolio">PORTFOLIO</a></li>
 						        <li><a href="#discover">DISCOVER A PROJECT </a></li>
-						        <li><a href="#blog">BLOG</a></li>
+						        <li class="hidden-xs hidden-sm"><a href="#blog">BLOG</a></li>
 						        <li><a href="#find-out">FIND OUT MORE</a></li>
 						        <li class="login"><a href="#">LOGIN</a></li>
 					      	</ul>
@@ -91,7 +59,6 @@
 		</div>
 	</header>
 	<section class="baner">
-		<div class="container-fluid">
 			<div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
 	  			<div class="carousel-inner">
 	    			<div class="active item">
@@ -118,17 +85,111 @@
 				  	</a>
 				</div>
 			</div>
-		</div>
 	</section>
 	<section class="padding our-work" id="how-it-works">
 		<div class="container">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-				<img src="img/our-work.jpg" class="os-animation" data-os-animation="flipInX" data-os-animation-delay="0s">
+				<img src="img/our-work.jpg">
 				<h2>Our work is the presentation<br>of our capabilities.</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. <br><br>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
 			</div>
 		</div>
 	</section>
+	    <div class="portfolio">
+            <section class="container" id="portfolio">
+                <h2>Our portfolio</h2>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 portfolio-item">
+                        <div class="card">
+                            <div class="imgBx">
+                                <img src="img/port-1.jpg">
+                            </div>
+                            <div class="details">
+                                <h5>Lorem Ipsum</h5>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                            </div>
+                        </div>
+                        <div class="bot-text">
+                            <h5>Ebony & Ivory</h5>
+                            <p>Branding</p>
+                        </div>    
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 portfolio-item">
+                        <div class="card">
+                            <div class="imgBx">
+                                <img src="img/port-2.jpg">
+                            </div>
+                            <div class="details">
+                                <h5>Lorem Ipsum</h5>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                            </div>
+                        </div>
+                        <div class="bot-text">
+                            <h5>Smart Stationary</h5>
+                            <p>Print Design</p>
+                        </div>    
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 portfolio-item">
+                        <div class="card">
+                            <div class="imgBx">
+                                <img src="img/port-3.jpg">
+                            </div>
+                            <div class="details">
+                                <h5>Lorem Ipsum</h5>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                            </div>
+                        </div>
+                        <div class="bot-text">
+                            <h5>Clever Poster</h5>
+                            <p>Print Design</p>
+                        </div>    
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 portfolio-item">
+                        <div class="card">
+                            <div class="imgBx">
+                                <img src="img/port-4.jpg">
+                            </div>
+                            <div class="details">
+                                <h5>Lorem Ipsum</h5>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                            </div>
+                        </div>
+                        <div class="bot-text">
+                            <h5>Vinyl Record</h5>
+                            <p>Product Mock-Up</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 portfolio-item">
+                        <div class="card">
+                            <div class="imgBx">
+                                <img src="img/port-5.jpg">
+                            </div>
+                            <div class="details">
+                                <h5>Lorem Ipsum</h5>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                            </div>
+                        </div>
+                        <div class="bot-text">
+                            <h5>Treehouse Template</h5>
+                            <p>Web Design</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 portfolio-item">
+                        <div class="card">
+                            <div class="imgBx">
+                                <img src="img/port-6.jpg">
+                            </div>
+                            <div class="details">
+                                <h5>Lorem Ipsum</h5>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                            </div>
+                        </div>
+                        <div class="bot-text">
+                            <h5>Burned Logo</h5>
+                            <p>Branding</p>
+                        </div>
+                    </div>
+            </section>
+        </div>
 	<section class="padding tabs">
 		<div class="container">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -171,7 +232,7 @@
 	</section>
 	<section class="padding find" id="find-out">
 		<div class="container-fluid">
-			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 left-block padding-inside os-animation" data-os-animation="bounceInLeft" data-os-animation-delay="0s">
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 left-block padding-inside">
 				<div class="col-xs-5 col-sm-5 col-md-5 col-lg-3 col-lg-offset-2 text-center">
 					<img src="img/sofa.png">
 				</div>
@@ -181,7 +242,7 @@
 					<button>Become A Member</button>
 				</div>
 			</div>
-			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 right-block padding-inside os-animation" data-os-animation="bounceInRight" data-os-animation-delay="0s">
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 right-block padding-inside">
 				<div class="col-xs-5 col-sm-5 col-md-5 col-lg-3 col-lg-offset-1 text-center">
 					<img src="img/wallet.png">
 				</div>
@@ -283,43 +344,43 @@
 			</div>
 		</div>
 	</section>
-	<section class="be-part" id="blog">
-		<div class="container os-animation" data-os-animation="fadeIn" data-os-animation-delay="0s">
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+	<section class="be-part hidden-xs hidden-sm" id="blog">
+		<div class="container">
+			<div class="col-md-12 col-lg-12 text-center">
 				<h2>Be Part of a Growing International Community</h2>
 				<p>One of the challenges in networking is everybody thinks it's making cold calls to strangers. Actually, it's the people who already have strong trust relationships with you</p>
 			</div>
-			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-5 col-lg-offset-1">
+			<div class="col-md-6 col-lg-5 col-lg-offset-1">
 				<div class="comment text-center">
 					<h4>One of the Best </h4>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod taempor incididunt ut labore et dolore magna aliqua.</p>
 					<div class="triangle-sm"></div>
 				</div>
-				<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 person">
+				<div class="col-md-2 col-lg-2 person">
 					<img src="img/ava.png">
 				</div>	
-				<div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 person">
+				<div class="col-md-4 col-lg-3 person">
 					<h5>Ivan Ivanov</h5>
 				</div>
 			</div>
-			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-5">
+			<div class="col-md-6 col-lg-5">
 				<div class="comment text-center">
 					<h4>Exellent Service </h4>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod taempor incididunt ut labore et dolore magna aliqua.</p>
 					<div class="triangle-sm"></div>
 				</div>
-				<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 person">
+				<div class="col-md-2 col-lg-2 person">
 					<img src="img/ava.png">
 				</div>	
-				<div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 person">
+				<div class="col-md-4 col-lg-3 person">
 					<h5>Ivan Ivanov</h5>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section class="padding brand animated fadeInDown">
+	<section class="hidden-xs hidden-sm padding brand">
 		<div class="container">
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+			<div class="col-md-12 col-lg-12 text-center">
 				<a href="#"><img src="img/crowdfunding.png"></a>
 				<a href="#"><img src="img/presents.png"></a>
 				<a href="#"><img src="img/rthk.png"></a>
@@ -336,31 +397,6 @@
 		</div>
 	</footer>
 
-
-<script type="text/javascript">
-$(window).scroll(function (){
-    $(' .move-left').each(function (){
-        var imagePos = $(this).offset().top;
-        var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow+500) {
-            $(this).addClass('bounceInLeft');
-        }
-    });
-});
-</script>
-	
-	<script type="text/javascript">
-$(window).scroll(function (){
-	 $(' .move-right').each(function (){
-        var imagePos = $(this).offset().top;
-        var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow+500) {
-            $(this).addClass('bounceInRight');
-        }
-    });
-});
-</script>
-	
 <!-- - КНОПКА НАВЕРХ - -->	
 	<div id="toTop">
 		<i class="fa fa-angle-double-up" aria-hidden="true"></i>
