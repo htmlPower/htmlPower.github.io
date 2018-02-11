@@ -151,11 +151,13 @@ h1{
     top: 0;
     left: 100%;
     padding: 60px 20px;
+	opacity:0;
 }
 
 .card:hover .details{
     top: 0;
     left: 0%;
+	opacity:1;
 }
 
 .card .details h5{
