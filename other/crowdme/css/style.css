@@ -132,6 +132,11 @@ h1{
     overflow: hidden;
 }
 
+.card .imgBx img{
+	width: 100%;
+	min-height: 300px;
+}	
+
 .card .imgBx,
 .card .details{
     width: 100%;
@@ -145,7 +150,7 @@ h1{
 	background: #99c50a;
     top: 0;
     left: 100%;
-    padding: 80px 30px;
+    padding: 60px 20px;
 }
 
 .card:hover .details{
