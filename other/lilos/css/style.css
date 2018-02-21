@@ -406,6 +406,10 @@ input, button{
         margin: 25px 0;
     }
 
+    .search__header-hint{
+        font-size: 14px;
+    }
+
     .cart__left{
         box-shadow: none;
         padding-left: 5% !important;
@@ -436,5 +440,25 @@ input, button{
 
     .cart__total__result-name{
         font-size: 14px;
+    }
+}
+
+@media (max-width: 370px) {
+    .main__name__header-element {
+        font-size: 60px;
+    }
+    .cart__item__about,
+    .cart__item{
+        font-size: 10px;
+    }
+
+    .cart__total__result-name{
+        font-size: 12px;
+    }
+
+    .cart__total__spip-sum,
+    .cart__total__price-sum,
+    .cart__total__result-sum{
+        font-size: 12px;
     }
 }
