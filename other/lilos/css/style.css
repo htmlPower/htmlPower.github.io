@@ -426,6 +426,9 @@ input, button{
 }
 
 @media (max-width: 767px) {
+    .main__name__header-element {
+        font-size: 70px;
+    }
     .cart__item__about,
     .cart__item{
         font-size: 11px;
