@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lilos</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-1 left-nav">
+				<div class="logo">
+					<span class="logo-element">L.</span>
+				</div>
+				<div class="home">
+					<div class="home-icon">
+						<a href="javascript:;" class="home__icon-link">
+							<i class="fa fa-home home__icon-element" aria-hidden="true"></i>
+						</a>
+					</div>
+				</div>
+				<div class="cart">
+					<div class="cart-icon">
+						<a href="javascript:;" class="cart__icon-link" onclick="showHide('cart-page')">
+							<i class="fa fa-shopping-cart cart__icon-element" aria-hidden="true"></i>
+						</a>
+					</div>
+				</div>
+				<div class="search">
+					<div class="search__icon">
+						<a href="javascript:;" class="search__icon-link" onclick="showHide('search-page')">
+							<i class="fa fa-search search__icon-element" aria-hidden="true"></i>
+						</a>	
+					</div>
+				</div>
+			</div>
+			<div class="col-11 main">
+				<div class="main__name">
+					<div class="main__name__header">
+						<span class="main__name__header-element">Lilos</span>
+					</div>
+					<div class="main__name__about">
+						<h2 class="main__name__about-element">Магазин уютной дизайнерской мебели</h2>
+					</div>
+					<div class="main__name__btn">
+						<button class="main__name__btn-element">скачать каталог</button>
+					</div>
+				</div>
+<!-- - Поиск - -->			
+				<div class="main__search" id="search-page"  style="display:none">
+					<div class="search__header">
+						<form class="search__header__form">
+  							<input type="text" class="search__input">
+  							<button type="reset" class="search__cancel"></button>
+						</form>	
+						<div class="search__header-hint">
+							<span>К примеру, красное кресло</span>
+						</div>
+					</div>
+					<div class="search__result">
+						<div class="row no-gutters">
+							<div class="col-12 col-lg-6 search__result__item">
+								<div class="row align-items-center no-gutters">
+									<div class="col-12 col-lg-6">
+										<img src="./img/search__result__item1.jpg" class="search__result__item-img" alt="">
+									</div>
+									<div class="col-12 col-lg-6 search__result__item-about">
+										<a href="javascript:;">Красное кресло</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-lg-6 search__result__item">
+								<div class="row align-items-center no-gutters">
+									<div class="col-12 col-lg-6">
+										<img src="./img/search__result__item2.jpg" class="search__result__item-img" alt="">
+									</div>
+									<div class="col-12 col-lg-6 search__result__item-about">
+										<a href="javascript:;">Черное кресло</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+<!-- - Корзина - -->					
+				<div class="main__cart" id="cart-page" style="display:none">
+					<div class="cart__items">
+						<div class="row no-gutters">
+							<div class="col-12 col-lg-6 cart__left">
+								<div class="cart__header">
+									<div class="cart__header__name">
+										<span>Корзина</span>
+									</div>
+								</div>
+								<div class="row cart__item">
+									<div class="col-3 cart__item-img">
+										<img src="./img/category__img1.jpg" alt="">
+									</div>
+									<div class="col-6 cart__item__about">
+										<div class="item__name">
+											<a href="javascript:;">Красное кресло</a>
+										</div>
+									</div>
+									<div class="col-3 cart__item__price">
+										<div class="item__price">
+											<span><i class="fa fa-rub" aria-hidden="true"></i> 18 025</span>
+										</div>
+									</div>
+								</div>
+								<div class="row cart__item">
+									<div class="col-3 cart__item-img">
+										<img src="./img/category__img2.jpg" alt="">
+									</div>
+									<div class="col-6 cart__item__about">
+										<div class="item__name">
+											<a href="javascript:;">Кухонный гаритур</a>
+										</div>
+									</div>
+									<div class="col-3 cart__item__price">
+										<div class="item__price">
+											<span><i class="fa fa-rub" aria-hidden="true"></i> 35 999</span>
+										</div>
+									</div>
+								</div>
+								<div class="row cart__item">
+									<div class="col-3 cart__item-img">
+										<img src="./img/category__img3.jpg" alt="">
+									</div>
+									<div class="col-6 cart__item__about">
+										<div class="item__name">
+											<a href="javascript:;">Синее кресло</a>
+										</div>
+									</div>
+									<div class="col-3 cart__item__price">
+										<div class="item__price">
+											<span><i class="fa fa-rub" aria-hidden="true"></i> 12 001</span>
+										</div>
+									</div>
+								</div>
+								<div class="row cart__item">
+									<div class="col-3 cart__item-img">
+										<img src="./img/category__img4.jpg" alt="">
+									</div>
+									<div class="col-6 cart__item__about">
+										<div class="item__name">
+											<a href="javascript:;">Кровать</a>
+										</div>
+									</div>
+									<div class="col-3 cart__item__price">
+										<div class="item__price">
+											<span><i class="fa fa-rub" aria-hidden="true"></i> 30 699</span>
+										</div>
+									</div>
+								</div>
+								<div class="row cart__item">
+									<div class="col-3 cart__item-img">
+										<img src="./img/category__img3.jpg" alt="">
+									</div>
+									<div class="col-6 cart__item__about">
+										<div class="item__name">
+											<a href="javascript:;">Кресло</a>
+										</div>
+									</div>
+									<div class="col-3 cart__item__price">
+										<div class="item__price">
+											<span><i class="fa fa-rub" aria-hidden="true"></i> 699</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-lg-6 cart__right">
+								<div class="recomend">
+									<div class="row no-gutters">
+										<div class="col-2 recomend__header">
+											<span>Рекомендуем:</span>
+										</div>
+										<div class="col-5 recomend__item">
+											<div class="row no-gutters">
+												<div class="col-6 recomend__img">
+													<img src="./img/category__img1.jpg" alt="">
+												</div>
+												<div class="col-6 recomend__about">
+													<a href="javascript:;">Кресло</a>
+												</div>
+											</div>
+										</div>
+										<div class="col-5 recomend__item">
+											<div class="row no-gutters">
+												<div class="col-6 recomend__img">
+													<img src="./img/category__img3.jpg" alt="">
+												</div>
+												<div class="col-6 recomend__about">
+													<a href="javascript:;">Кресло</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="cart__right__total">
+									<div class="row cart__total">
+										<div class="col-7 cart__total--left cart__total__price-name">
+											<span>Сумма:</span>
+										</div>
+										<div class="col-5 cart__total--right cart__total__price-sum">
+											<span><i class="fa fa-rub" aria-hidden="true"></i> 108 004</span>
+										</div>
+									</div>
+									<div class="row cart__total">
+										<div class="col-7 cart__total--left cart__total__ship-name">
+											<span>Доставка:</span>
+										</div>
+										<div class="col-5 cart__total--right cart__total__spip-sum">
+											<span><i class="fa fa-rub" aria-hidden="true"></i> 495</span>
+										</div>
+									</div>
+									<div class="row cart__total">
+										<div class="col-7 cart__total--left cart__total__result-name">
+											<span>Общая сумма:</span>
+										</div>
+										<div class="col-5 cart__total--right cart__total__result-sum">
+											<span><i class="fa fa-rub" aria-hidden="true"></i> 108 499</span>
+										</div>
+									</div>							
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="right-nav">
+				<input type="checkbox" id="right-nav__toggle" hidden="">
+				<nav class="hidden-nav">
+					<div class="bars">
+						<div class="bars__icon">
+							<label for="right-nav__toggle" class="bars__icon-element" onclick=""></label>
+						</div>
+					</div>
+					<div class="navigation">
+						<ul class="navigation__list">
+							<li class="navigation__list-item">
+								<a href="javascript:;" class="navigation__list-link">Спальня</a>
+								<img src="./img/nav-icon1.jpg" class="navigation__list-img" alt="">
+							</li>
+							<li class="navigation__list-item">
+								<a href="javascript:;" class="navigation__list-link">Офис</a>
+								<img src="./img/nav-icon2.jpg" class="navigation__list-img" alt="">
+							</li>
+							<li class="navigation__list-item">
+								<a href="javascript:;" class="navigation__list-link">Детская</a>
+								<img src="./img/nav-icon3.jpg" class="navigation__list-img" alt="">
+							</li>
+							<li class="navigation__list-item">
+								<a href="javascript:;" class="navigation__list-link">Кухня</a>
+								<img src="./img/nav-icon4.jpg" class="navigation__list-img" alt="">
+							</li>
+							<li class="navigation__list-item">
+								<a href="javascript:;" class="navigation__list-link">Аксессуары</a>
+								<img src="./img/nav-icon5.jpg" class="navigation__list-img" alt="">
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+
+<!-- - ФАЙЛЫ js - -->	
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="./js/script.js"></script>
+</body>
+</html>
