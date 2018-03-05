@@ -19,28 +19,28 @@
 				</div>
 				<div class="home">
 					<div class="home-icon">
-						<a href="javascript:;" class="home__icon-link">
+						<a href="main" class="home__icon-link icon-link">
 							<i class="fa fa-home home__icon-element" aria-hidden="true"></i>
 						</a>
 					</div>
 				</div>
 				<div class="cart">
 					<div class="cart-icon">
-						<a href="javascript:;" class="cart__icon-link" onclick="showHide('cart-page')">
+						<a href="cart-page" class="cart__icon-link icon-link">
 							<i class="fa fa-shopping-cart cart__icon-element" aria-hidden="true"></i>
 						</a>
 					</div>
 				</div>
 				<div class="search">
 					<div class="search__icon">
-						<a href="javascript:;" class="search__icon-link" onclick="showHide('search-page')">
+						<a href="search-page" class="search__icon-link icon-link">
 							<i class="fa fa-search search__icon-element" aria-hidden="true"></i>
 						</a>	
 					</div>
 				</div>
 			</div>
 			<div class="col-11 main">
-				<div class="main__name">
+				<div class="main__name" id="main">
 					<div class="main__name__header">
 						<span class="main__name__header-element">Lilos</span>
 					</div>
@@ -52,7 +52,7 @@
 					</div>
 				</div>
 <!-- - Поиск - -->			
-				<div class="main__search" id="search-page"  style="display:none">
+				<div class="main__search none" id="search-page">
 					<div class="search__header">
 						<form class="search__header__form">
   							<input type="text" class="search__input">
@@ -88,7 +88,7 @@
 					</div>
 				</div>
 <!-- - Корзина - -->					
-				<div class="main__cart" id="cart-page" style="display:none">
+				<div class="main__cart none" id="cart-page">
 					<div class="cart__items">
 						<div class="row no-gutters">
 							<div class="col-12 col-lg-6 cart__left">
@@ -271,7 +271,7 @@
 	</div>
 
 <!-- - ФАЙЛЫ js - -->	
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<script src="./js/script.js"></script>
 </body>

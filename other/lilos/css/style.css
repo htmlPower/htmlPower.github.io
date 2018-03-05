@@ -25,6 +25,9 @@ input, button{
     box-shadow:         1px 1px 16px 0px rgba(50, 50, 50, 0.5);
 }
 
+.none{display: none}
+.activ{display: block;}
+
 .logo, .home, .cart, .search{
     display: -webkit-box;
     display: -ms-flexbox;
